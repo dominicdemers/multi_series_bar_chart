@@ -1,0 +1,723 @@
+@media all and (min-width:600px)
+{
+.parsys_column {
+	margin: 0px;
+}
+.cq-colctrl-lt0-c0 {
+	width: 48%; float: left;
+}
+.cq-colctrl-lt0-c1 {
+	width: 48%; float: left;
+}
+.cq-colctrl-lt0-c0 {
+	margin-right: 2%;
+}
+.cq-colctrl-lt0-c1 {
+	margin-left: 2%;
+}
+}
+.textimage-left {
+	margin: 0px 1em 1em 0px; float: left;
+}
+.textimage-right {
+	margin: 0px 0px 1em 1em; float: right;
+}
+.textimage-text {
+	margin: 0px 0px -1em;
+}
+.textimage-text::after {
+	clear: both; display: table; content: "";
+}
+div.carousel {
+	margin-top: 7px; margin-bottom: 7px;
+}
+.cq-carousel {
+	width: 940px; height: 270px; overflow: hidden; position: relative;
+}
+.cq-carousel var {
+	display: none;
+}
+.cq-carousel-banner-item {
+	left: 1000px; top: 0px; width: 940px; height: 270px; overflow: hidden; position: absolute; background-color: rgb(238, 238, 238);
+}
+.cq-carousel-banner-item img {
+	background: no-repeat center; width: 940px; height: 270px;
+}
+.par .cq-carousel-banner-item img {
+	background: no-repeat center; width: 700px; height: 245px;
+}
+.par .cq-carousel {
+	width: 700px; height: 245px;
+}
+.par .cq-carousel-banner-item {
+	width: 700px; height: 245px;
+}
+.cq-carousel-banner-item h3 {
+	padding: 10px;
+}
+.cq-carousel-banner-item p {
+	padding: 10px;
+}
+.cq-carousel-banner {
+	position: absolute;
+}
+.cq-carousel-banner-switches {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-tl {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-tc {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-tr {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-bl {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-bc {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-br {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches {
+	display: none;
+}
+.cq-carousel-banner-switches-tl {
+	left: 0px; top: 0px;
+}
+.cq-carousel-banner-switches-tc {
+	left: 0px; top: 0px; text-align: center;
+}
+.cq-carousel-banner-switches-tr {
+	left: 0px; top: 0px; text-align: right;
+}
+.cq-carousel-banner-switches-bl {
+	left: 0px; bottom: 0px;
+}
+.cq-carousel-banner-switches-bc {
+	left: 0px; text-align: center; bottom: 0px;
+}
+.cq-carousel-banner-switches-br {
+	left: 0px; text-align: right; bottom: 0px;
+}
+.cq-carousel-banner-switch {
+	margin: 8px; padding: 0px; display: inline-block;
+}
+.cq-carousel-banner-switch-br {
+	margin: 0px; padding: 0px; right: 8px; bottom: 0px; position: absolute;
+}
+.cq-carousel-banner-switch-bl {
+	margin: 0px; padding: 0px; left: 8px; bottom: 0px; position: absolute;
+}
+.cq-carousel-controls a {
+	background: url("../default/images/carousel/controls.png") no-repeat 0px 0px; top: 111px; width: 24px; height: 48px; visibility: hidden; position: absolute;
+}
+.cq-carousel-controls a.cq-carousel-active {
+	visibility: visible;
+}
+a.cq-carousel-control-prev {
+	background-position: -24px 0px; left: 0px;
+}
+a.cq-carousel-control-prev:hover {
+	background-position: -72px 0px; left: 0px;
+}
+a.cq-carousel-control-next {
+	right: 0px;
+}
+a.cq-carousel-control-next:hover {
+	background-position: -48px 0px; right: 0px;
+}
+.cq-carousel-banner-switch a {
+	background: url("../default/images/carousel/switcher.png") no-repeat 0px 0px; display: inline-block;
+}
+.cq-carousel-banner-switch a img {
+	width: 25px; height: 25px; vertical-align: top;
+}
+.cq-carousel-banner-switch a.cq-carousel-active {
+	background-position: -25px 0px;
+}
+.cq-carousel-banner-switch a:hover {
+	background-position: -25px 0px;
+}
+.cq-carousel-banner-switch li {
+	background: none !important; list-style: none; float: left; display: inline-block;
+}
+div.carousel {
+	margin-top: 7px; margin-bottom: 7px;
+}
+.cq-carousel {
+	width: 940px; height: 270px; overflow: hidden; position: relative;
+}
+.cq-carousel var {
+	display: none;
+}
+.cq-carousel-banner-item {
+	left: 1000px; top: 0px; width: 940px; height: 270px; overflow: hidden; position: absolute; background-color: rgb(238, 238, 238);
+}
+.cq-carousel-banner-item img {
+	background: no-repeat center; width: 940px; height: 270px;
+}
+.par .cq-carousel-banner-item img {
+	background: no-repeat center; width: 700px; height: 245px;
+}
+.par .cq-carousel {
+	width: 700px; height: 245px;
+}
+.par .cq-carousel-banner-item {
+	width: 700px; height: 245px;
+}
+.cq-carousel-banner-item h3 {
+	padding: 10px;
+}
+.cq-carousel-banner-item p {
+	padding: 10px;
+}
+.cq-carousel-banner {
+	position: absolute;
+}
+.cq-carousel-banner-switches {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-tl {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-tc {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-tr {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-bl {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-bc {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-br {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches {
+	display: none;
+}
+.cq-carousel-banner-switches-tl {
+	left: 0px; top: 0px;
+}
+.cq-carousel-banner-switches-tc {
+	left: 0px; top: 0px; text-align: center;
+}
+.cq-carousel-banner-switches-tr {
+	left: 0px; top: 0px; text-align: right;
+}
+.cq-carousel-banner-switches-bl {
+	left: 0px; bottom: 0px;
+}
+.cq-carousel-banner-switches-bc {
+	left: 0px; text-align: center; bottom: 0px;
+}
+.cq-carousel-banner-switches-br {
+	left: 0px; text-align: right; bottom: 0px;
+}
+.cq-carousel-banner-switch {
+	margin: 8px; padding: 0px; display: inline-block;
+}
+.cq-carousel-banner-switch-br {
+	margin: 0px; padding: 0px; right: 8px; bottom: 0px; position: absolute;
+}
+.cq-carousel-banner-switch-bl {
+	margin: 0px; padding: 0px; left: 8px; bottom: 0px; position: absolute;
+}
+.cq-carousel-controls a {
+	background: url("../default/images/carousel/controls.png") no-repeat 0px 0px; top: 111px; width: 24px; height: 48px; visibility: hidden; position: absolute;
+}
+.cq-carousel-controls a.cq-carousel-active {
+	visibility: visible;
+}
+a.cq-carousel-control-prev {
+	background-position: -24px 0px; left: 0px;
+}
+a.cq-carousel-control-prev:hover {
+	background-position: -72px 0px; left: 0px;
+}
+a.cq-carousel-control-next {
+	right: 0px;
+}
+a.cq-carousel-control-next:hover {
+	background-position: -48px 0px; right: 0px;
+}
+.cq-carousel-banner-switch a {
+	background: url("../default/images/carousel/switcher.png") no-repeat 0px 0px; display: inline-block;
+}
+.cq-carousel-banner-switch a img {
+	width: 25px; height: 25px; vertical-align: top;
+}
+.cq-carousel-banner-switch a.cq-carousel-active {
+	background-position: -25px 0px;
+}
+.cq-carousel-banner-switch a:hover {
+	background-position: -25px 0px;
+}
+.cq-carousel-banner-switch li {
+	background: none !important; list-style: none; float: left; display: inline-block;
+}
+div.carousel {
+	margin-top: 7px; margin-bottom: 7px;
+}
+.cq-carousel {
+	width: 940px; height: 270px; overflow: hidden; position: relative;
+}
+.cq-carousel var {
+	display: none;
+}
+.cq-carousel-banner-item {
+	left: 1000px; top: 0px; width: 940px; height: 270px; overflow: hidden; position: absolute; background-color: rgb(238, 238, 238);
+}
+.cq-carousel-banner-item img {
+	background: no-repeat center; width: 940px; height: 270px;
+}
+.par .cq-carousel-banner-item img {
+	background: no-repeat center; width: 700px; height: 245px;
+}
+.par .cq-carousel {
+	width: 700px; height: 245px;
+}
+.par .cq-carousel-banner-item {
+	width: 700px; height: 245px;
+}
+.cq-carousel-banner-item h3 {
+	padding: 10px;
+}
+.cq-carousel-banner-item p {
+	padding: 10px;
+}
+.cq-carousel-banner {
+	position: absolute;
+}
+.cq-carousel-banner-switches {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-tl {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-tc {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-tr {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-bl {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-bc {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches-br {
+	margin: 0px; padding: 0px; width: 100%; position: absolute;
+}
+.cq-carousel-banner-switches {
+	display: none;
+}
+.cq-carousel-banner-switches-tl {
+	left: 0px; top: 0px;
+}
+.cq-carousel-banner-switches-tc {
+	left: 0px; top: 0px; text-align: center;
+}
+.cq-carousel-banner-switches-tr {
+	left: 0px; top: 0px; text-align: right;
+}
+.cq-carousel-banner-switches-bl {
+	left: 0px; bottom: 0px;
+}
+.cq-carousel-banner-switches-bc {
+	left: 0px; text-align: center; bottom: 0px;
+}
+.cq-carousel-banner-switches-br {
+	left: 0px; text-align: right; bottom: 0px;
+}
+.cq-carousel-banner-switch {
+	margin: 8px; padding: 0px; display: inline-block;
+}
+.cq-carousel-banner-switch-br {
+	margin: 0px; padding: 0px; right: 8px; bottom: 0px; position: absolute;
+}
+.cq-carousel-banner-switch-bl {
+	margin: 0px; padding: 0px; left: 8px; bottom: 0px; position: absolute;
+}
+.cq-carousel-controls a {
+	background: url("../default/images/carousel/controls.png") no-repeat 0px 0px; top: 111px; width: 24px; height: 48px; visibility: hidden; position: absolute;
+}
+.cq-carousel-controls a.cq-carousel-active {
+	visibility: visible;
+}
+a.cq-carousel-control-prev {
+	background-position: -24px 0px; left: 0px;
+}
+a.cq-carousel-control-prev:hover {
+	background-position: -72px 0px; left: 0px;
+}
+a.cq-carousel-control-next {
+	right: 0px;
+}
+a.cq-carousel-control-next:hover {
+	background-position: -48px 0px; right: 0px;
+}
+.cq-carousel-banner-switch a {
+	background: url("../default/images/carousel/switcher.png") no-repeat 0px 0px; display: inline-block;
+}
+.cq-carousel-banner-switch a img {
+	width: 25px; height: 25px; vertical-align: top;
+}
+.cq-carousel-banner-switch a.cq-carousel-active {
+	background-position: -25px 0px;
+}
+.cq-carousel-banner-switch a:hover {
+	background-position: -25px 0px;
+}
+.cq-carousel-banner-switch li {
+	background: none !important; list-style: none; float: left; display: inline-block;
+}
+@media all and (min-width:768px)
+{
+.bx-parl {
+	background-position: center; padding-top: 80px; min-height: 350px; background-image: url("../../../content/dam/canada/bck-srh.jpg"); background-repeat: no-repeat;
+}
+.bx-srch {
+	color: rgb(255, 255, 255); background-image: url("../../../content/dam/canada/bck-opa.png");
+}
+.bx-srch a {
+	color: rgb(255, 255, 255);
+}
+.bx-parl .bx-srch .row a {
+	color: rgb(255, 255, 255);
+}
+.bx-parl .bx-srch .row a:focus {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+.bx-parl .bx-srch .row a:hover {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+}
+@media all and (min-width:992px)
+{
+.bx-parl {
+	padding-top: 160px; min-height: 475px;
+}
+}
+@media all and (min-width:1200px)
+{
+.bx-parl {
+	padding-top: 220px; min-height: 600px;
+}
+}
+.pagination .active a {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.pagination .active span {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.pagination .active a:hover {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.pagination .active span:hover {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.pagination .active a:focus {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.pagination .active span:focus {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.panel-info .panel-heading {
+	border-color: rgb(51, 80, 117); color: rgb(255, 255, 255); background-color: rgb(51, 80, 117);
+}
+.panel-info {
+	border-color: rgb(51, 80, 117);
+}
+.nav .nav {
+	padding-left: 40px;
+}
+.nav li a:focus {
+	background-color: rgb(255, 255, 255);
+}
+.nav li a:hover {
+	background-color: rgb(255, 255, 255);
+}
+.result h2 {
+	color: rgb(79, 79, 79);
+}
+.result span {
+	color: rgb(0, 102, 33);
+}
+.result p {
+	margin: 0px;
+}
+#cse-search-box {
+	margin: 20px 0px;
+}
+fieldset .h3 {
+	border: 0px currentColor; border-image: none;
+}
+#gcwb_prts li {
+	margin-bottom: 5px !important;
+}
+.srch-fltr .panel {
+	margin-bottom: 0px;
+}
+.srch-fltr .panel a:visited {
+	color: rgb(40, 65, 98);
+}
+.srch-fltr .panel a:hover {
+	color: rgb(5, 53, 210);
+}
+.srch-fltr .panel a:focus {
+	color: rgb(5, 53, 210);
+}
+.srch-fltr .panel .badge {
+	color: rgb(255, 255, 255);
+}
+.no-details details[open] > summary::before {
+	content: "\25BC\a0";
+}
+[dir=rtl].no-details details[open] > summary::before {
+	content: "\25BC\a0";
+}
+.no-details details > summary::before {
+	font-size: 84%; content: "\25BA\a0";
+}
+.no-details details[open] {
+	display: block;
+}
+[dir=rtl].no-details details > summary::before {
+	content: "\25C4\a0";
+}
+@media all and (min-width:768px)
+{
+.bx-parl {
+	background-position: center; padding-top: 80px; min-height: 350px; background-image: url("../../../content/dam/canada/bck-srh.jpg"); background-repeat: no-repeat;
+}
+.bx-srch {
+	color: rgb(255, 255, 255); background-image: url("../../../content/dam/canada/bck-opa.png");
+}
+.bx-srch a {
+	color: rgb(255, 255, 255);
+}
+.bx-parl .bx-srch .row a {
+	color: rgb(255, 255, 255);
+}
+.bx-parl .bx-srch .row a:focus {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+.bx-parl .bx-srch .row a:hover {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+}
+@media all and (min-width:992px)
+{
+.bx-parl {
+	padding-top: 160px; min-height: 475px;
+}
+}
+@media all and (min-width:1200px)
+{
+.bx-parl {
+	padding-top: 220px; min-height: 600px;
+}
+}
+.pagination .active a {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.pagination .active span {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.pagination .active a:hover {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.pagination .active span:hover {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.pagination .active a:focus {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.pagination .active span:focus {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.panel-info .panel-heading {
+	border-color: rgb(51, 80, 117); color: rgb(255, 255, 255); background-color: rgb(51, 80, 117);
+}
+.panel-info {
+	border-color: rgb(51, 80, 117);
+}
+.nav .nav {
+	padding-left: 40px;
+}
+.nav li a:focus {
+	background-color: rgb(255, 255, 255);
+}
+.nav li a:hover {
+	background-color: rgb(255, 255, 255);
+}
+.result h2 {
+	color: rgb(79, 79, 79);
+}
+.result span {
+	color: rgb(0, 102, 33);
+}
+.result p {
+	margin: 0px;
+}
+#cse-search-box {
+	margin: 20px 0px;
+}
+fieldset .h3 {
+	border: 0px currentColor; border-image: none;
+}
+#gcwb_prts li {
+	margin-bottom: 5px !important;
+}
+.srch-fltr .panel {
+	margin-bottom: 0px;
+}
+.srch-fltr .panel a:visited {
+	color: rgb(40, 65, 98);
+}
+.srch-fltr .panel a:hover {
+	color: rgb(5, 53, 210);
+}
+.srch-fltr .panel a:focus {
+	color: rgb(5, 53, 210);
+}
+.srch-fltr .panel .badge {
+	color: rgb(255, 255, 255);
+}
+.no-details details[open] > summary::before {
+	content: "\25BC\a0";
+}
+[dir=rtl].no-details details[open] > summary::before {
+	content: "\25BC\a0";
+}
+.no-details details > summary::before {
+	font-size: 84%; content: "\25BA\a0";
+}
+.no-details details[open] {
+	display: block;
+}
+[dir=rtl].no-details details > summary::before {
+	content: "\25C4\a0";
+}
+@media all and (min-width:768px)
+{
+.bx-parl {
+	background-position: center; padding-top: 80px; min-height: 350px; background-image: url("../../../content/dam/canada/bck-srh.jpg"); background-repeat: no-repeat;
+}
+.bx-srch {
+	color: rgb(255, 255, 255); background-image: url("../../../content/dam/canada/bck-opa.png");
+}
+.bx-srch a {
+	color: rgb(255, 255, 255);
+}
+.bx-parl .bx-srch .row a {
+	color: rgb(255, 255, 255);
+}
+.bx-parl .bx-srch .row a:focus {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+.bx-parl .bx-srch .row a:hover {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+}
+@media all and (min-width:992px)
+{
+.bx-parl {
+	padding-top: 160px; min-height: 475px;
+}
+}
+@media all and (min-width:1200px)
+{
+.bx-parl {
+	padding-top: 220px; min-height: 600px;
+}
+}
+.pagination .active a {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.pagination .active span {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.pagination .active a:hover {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.pagination .active span:hover {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.pagination .active a:focus {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.pagination .active span:focus {
+	border-color: rgb(51, 80, 117); background-color: rgb(51, 80, 117);
+}
+.panel-info .panel-heading {
+	border-color: rgb(51, 80, 117); color: rgb(255, 255, 255); background-color: rgb(51, 80, 117);
+}
+.panel-info {
+	border-color: rgb(51, 80, 117);
+}
+.nav .nav {
+	padding-left: 40px;
+}
+.nav li a:focus {
+	background-color: rgb(255, 255, 255);
+}
+.nav li a:hover {
+	background-color: rgb(255, 255, 255);
+}
+.result h2 {
+	color: rgb(79, 79, 79);
+}
+.result span {
+	color: rgb(0, 102, 33);
+}
+.result p {
+	margin: 0px;
+}
+#cse-search-box {
+	margin: 20px 0px;
+}
+fieldset .h3 {
+	border: 0px currentColor; border-image: none;
+}
+#gcwb_prts li {
+	margin-bottom: 5px !important;
+}
+.srch-fltr .panel {
+	margin-bottom: 0px;
+}
+.srch-fltr .panel a:visited {
+	color: rgb(40, 65, 98);
+}
+.srch-fltr .panel a:hover {
+	color: rgb(5, 53, 210);
+}
+.srch-fltr .panel a:focus {
+	color: rgb(5, 53, 210);
+}
+.srch-fltr .panel .badge {
+	color: rgb(255, 255, 255);
+}
+.no-details details[open] > summary::before {
+	content: "\25BC\a0";
+}
+[dir=rtl].no-details details[open] > summary::before {
+	content: "\25BC\a0";
+}
+.no-details details > summary::before {
+	font-size: 84%; content: "\25BA\a0";
+}
+.no-details details[open] {
+	display: block;
+}
+[dir=rtl].no-details details > summary::before {
+	content: "\25C4\a0";
+}

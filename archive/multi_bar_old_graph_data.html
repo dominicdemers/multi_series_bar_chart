@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<style>
+
+.axis .domain {
+  display: none;
+}
+
+body {
+    display: table-caption;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+	
+
+</style>
+
+<div id="sel_div">
+	
+	<select id="sel_gnd">
+		<option value="male">Female</option>
+		<option value="femal">Male</option>
+	</select>
+	
+	<select id="sel_dept" multiple="multiple" size=5>
+		<option value="dept1">dept1</option>
+	</select>
+	
+	<select id="sel_question">
+		<option value="Question1">Question 1</option>
+		<option value="Question2">Question 2</option>
+	</select>
+	
+	
+	</div>
+		
+<svg width="960" height="500"></svg>
+<div  id="tbl_div"></div>
+
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js" type="text/javascript"></script>
+	<script src="raw_SOS_data.js"></script>
+<script>
+'use strict';
+
+		var formatPercent = d3.format(".0%")
+		var formatThousand = d3.format(",");
+		
+		var  sos_tbl_data = d3.csvParse(temp_sos_data, function(i) {
+						var f = d3.format(".0%");
+						var g = d3.format(".0f");
+						
+						i.shr_Not_at_all = +i.shr_Not_at_all;
+						i.shr_To_a_minimal_extent = +i.shr_To_a_minimal_extent;
+						i.shr_To_a_moderate_extent = +i.shr_To_a_moderate_extent;
+						i.shr_To_a_great_extent = +i.shr_To_a_great_extent;
+
+						i.total =	g(+i.total);
+	
+						return i;
+			});
+			
+		var columns = _.without(sos_tbl_data.columns,"question","gender");
+		columns.push("Series");
+		var answer_keys = _.without(sos_tbl_data.columns,"question","gender","dept","total");
+		var gender_keys =  _.uniq(_.pluck(sos_tbl_data, "gender"));
+		var question_keys =  _.uniq(_.pluck(sos_tbl_data, "question"));
+
+		var depts = _.pluck(sos_tbl_data, "dept");
+		var col_labels = ["Department", "Total","Not at all","To a minimal extent","To a moderate extent","To a great extent", "Series"];
+	
+		var dispatch = d3.dispatch("load_choice","load_table","update_table","load_chart", "update_chart");
+		
+		var start_dept = ["Employment and Social Development Canada"];
+		var start_gender = ["Female"];
+		var start_Q = ["Staffing activities are carried out in a transparent way"];
+						
+				
+		var x_obj = _.map(gender_keys, (g_key, i) => {
+
+								var filt_data_1= _.filter(sos_tbl_data, (row, i) => {
+									return [g_key].includes(row.gender);
+								})
+								
+	
+								var a_obj = _.map(question_keys, (q_key, i) => {
+
+									
+									var filt_data_2 = _.filter(filt_data_1, (row, i) => {
+										return [q_key].includes(row.question);
+									})
+									
+									return {
+										[q_key]:  "X2"
+										}
+								})	
+								return {
+											[g_key]: "X1",
+										}
+							})
+							
+			var z_obj = _.map(gender_keys,  (g_key, i) =>  
+										_.map(question_keys,  (q_key, i)  => 
+												_.map(answer_keys,  (a_key, i)  => ({
+											var1: g_key,	
+											[g_key] :  {
+													[q_key] : {
+														answer: a_key,
+														Gender: g_key,
+														Question: q_key,
+														[a_key]: "XX"
+														}
+													}
+											}))
+										)
+									)
+			var z_obj2 = _.map(gender_keys,  (g_key, i) =>   ({
+											[g_key] : _.map(question_keys,  (q_key, i)  =>  ({
+												[q_key] :  _.filter(sos_tbl_data,  (row, i) =>  [g_key].includes(row.gender) && [q_key].includes(row.question)  )		
+												}))
+										})
+									)
+			<!-- let newObj = Object.entries(obj).map([k, v] => ({[k]: v * 3}))); -->
+				debugger;		
+			var y_obj = _.map(gender_keys,  (g_key, i) => ({
+										[g_key] :  _.filter(sos_tbl_data,  (row, i) =>  [g_key].includes(row.gender) )
+											
+									}))
+	
+		var sos_graph_data = _.map(answer_keys, (a_key, i) => {
+												
+
+												var temp_shr = _.pluck(sos_tbl_data, a_key);
+												var temp_dept= _.pluck(sos_tbl_data, "dept");
+												<!-- debugger; -->
+												var a_obj = _.map(sos_tbl_data, (dept, i) => {
+												<!-- debugger; -->
+													return {
+															[temp_dept[i]]: temp_shr[i],
+															gender: dept.gender,
+															quesion: dept.question
+													}
+												})
+										<!-- debugger; -->
+										return  Object.assign({},{Category : a_key} , ...a_obj)
+											});
+		
+			debugger;			
+						
+		var sos_graph_datax = _.map(question_keys, (q_key, i) => {
+												_.map(gender_keys, (g_key, i) => {
+													_.map(answer_keys, (a_key, i) => {
+
+														var filt_data = _.filter(sos_tbl_data, (row, i) => {
+															return [q_key].includes(row.question) &&  [g_key].includes(row.gender) ;
+														})
+								
+														var temp_shr = _.pluck(filt_data, a_key);
+														var temp_dept= _.pluck(filt_data, "dept");
+						
+														var a_obj = _.map(temp_dept, (dept, i) => {
+															return {
+																[temp_dept[i]]: temp_shr[i]
+															}
+														})
+														
+														var temp = Object.assign({}, {Category : a_key},  ...a_obj)
+														var temp2 = {
+															question: q_key,
+															gender: g_key,
+															temp
+														}
+													return  temp2;
+												})
+											})
+										});
+
+		var sos_graph_dataxxx = _.map(question_keys, (q_key, i) => {
+									
+											var q_obj = _.map(gender_keys, (g_key, i) => {
+												var g_obj = _.map(answer_keys, (a_key, i) => {
+
+													var filt_data = _.filter(sos_tbl_data, (row, i) => {
+														return [q_key].includes(row.question) &&  [g_key].includes(row.gender) ;
+													})
+								
+													var temp_shr = _.pluck(filt_data, a_key);
+													var temp_dept= _.pluck(filt_data, "dept");
+					
+													var a_obj = _.map(temp_dept, (dept, i) => {
+														return {
+															[temp_dept[i]]: temp_shr[i]
+														}
+													})
+												
+													return  Object.assign({}, {Category : a_key},  ...a_obj)
+												})
+
+												return  Object.assign({Gender : g_key} , ...g_obj)
+											})
+
+											return  Object.assign({Question : q_key}, ...q_obj)
+										});
+								
+			
+			debugger;
+			dispatch.on("load_choice", function(load_data) {
+			
+				var drop_box = (id_name, variable, start_val)  => {
+			
+					var select_list = _.without(_.uniq(_.pluck(load_data, variable)),'Public Service Total').sort() ;
+					
+					if(variable == "dept")  {select_list.splice(0, 0, 'Public Service Total') }
+
+					var sel_var = d3.select(id_name)
+							.selectAll("option")
+							.data(select_list);
+
+					sel_var.exit().remove(); 
+
+					var sel_dept_enter = sel_var.enter()
+							.append("option")
+
+					sel_dept_enter.merge(sel_var)
+							.attr("value", function(d) { return d; })
+							.text(function(d) { return d; })
+
+
+					d3.select(id_name)
+						.property("value", start_val)
+						.on("change", function() {
+							
+							var current_depts = _.map(d3.select("#sel_dept").property("selectedOptions"), x => x.value);
+							var current_question=  d3.select("#sel_question").property("value");
+							var current_gender = d3.select("#sel_gnd").property("value");
+							
+							var new_TBL_data= _.filter(sos_tbl_data, (row, i) => {
+									return current_depts.includes(row.dept) &&  current_question.includes(row.question)  && current_gender.includes(row.gender) ;
+								})
+										
+							var new_graph_data= _.map(sos_graph_data, (row, i) => {
+									return _.pick(row,['Category', ...current_depts]);
+								})		
+							
+							dispatch.call("update_table", this, new_TBL_data);
+							dispatch.call("update_chart", this, new_graph_data);								
+							
+						});
+					
+				}
+				
+				drop_box("#sel_dept", "dept",  start_dept)		
+				drop_box("#sel_question", "question",  start_Q)	
+				drop_box("#sel_gnd", "gender",  start_gender)					
+			
+		});
+
+				var svg = d3.select("svg"),
+					margin = {top: 20, right: 20, bottom: 30, left: 40},
+					width = +svg.attr("width") - margin.left - margin.right,
+					height = +svg.attr("height") - margin.top - margin.bottom,
+				
+				g = svg
+					.append("g")
+					.attr("id", "all_g") 
+					.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+				var x0 = d3.scaleBand()
+					.rangeRound([0, width])
+					.paddingInner(0.1);
+
+				var x1 = d3.scaleBand()
+					.padding(0.05);
+
+				var y = d3.scaleLinear()
+					.rangeRound([height, 0]);
+
+				var z = d3.scaleOrdinal(d3.schemeCategory10);
+				
+			
+		dispatch.on("load_chart", function(chart_data) {
+
+			var new_depts = _.map(d3.select("#sel_dept").property("selectedOptions"), x => x.value);		
+			
+			debugger;
+					
+			var new_chart_data= _.map(chart_data, (row, i) => {
+				return _.pick(row,['Category', ...new_depts]);
+			})
+			
+			debugger;
+			
+			x0.domain(new_chart_data.map(function(d) {return d.Category; }));
+			x1.domain(new_depts).rangeRound([0, x0.bandwidth()]);
+			y.domain([0, d3.max(new_chart_data, function(d) {return d3.max(new_depts, function(y) { return d[y]; }); })]).nice();
+
+			g.append("g")
+				.attr("id", "chart_g") 
+				.selectAll("g")
+				.data(new_chart_data)
+				.enter()
+					.append("g")
+				  .attr("transform", function(d) { return "translate(" + x0(d.Category) + ",0)"; }) 
+				  .attr("id", "rect_g") 
+				.selectAll("rect")
+
+				.data(function(d) { return new_depts.map(function(y) { return {key: y, value: d[y]}; }); })
+				.enter().append("rect")
+				  .attr("x", function(d) { return x1(d.key); })
+				  .attr("y", function(d) { return y(+d.value); })
+				  .attr("width", x1.bandwidth())
+				  .attr("height", function(d) { return height - y(+d.value); })
+				  .attr("fill", function(d) { return z(d.key); });
+
+			  g.append("g")
+				  .attr("class", "xaxis")
+				  .attr("transform", "translate(0," + height + ")")
+				  .call(d3.axisBottom(x0));
+
+			  g.append("g")
+				  .attr("class", "yaxis")
+				  .call(d3.axisLeft(y).tickFormat(formatPercent).ticks(null, "s"))
+				.append("text")
+				  .attr("x", 2)
+				  .attr("y", y(y.ticks().pop()) + 0.5)
+				  .attr("dy", "0.32em")
+				  .attr("fill", "#000")
+				  .attr("font-weight", "bold")
+				  .attr("text-anchor", "start")
+				  .text("%");
+
+			dispatch.on("update_chart", function(update_data) {
+
+						var new_deptx = _.map(d3.select("#sel_dept").property("selectedOptions"), x => x.value);
+												
+						x0.domain(update_data.map(function(d) {return d.Category; }));
+						x1.domain(new_deptx).rangeRound([0, x0.bandwidth()]);
+						y.domain([0, d3.max(update_data, function(d) { return d3.max(new_deptx, function(state) { return d[state]; }); })]).nice();
+						
+						d3.select(".yaxis")
+							.transition(750)
+							.call(d3.axisLeft(y).tickFormat(formatPercent).ticks(null, "s"));
+				
+						var old_g =	d3
+												.select("#chart_g")
+												.selectAll("#rect_g")
+												.data(update_data)
+						
+						var old_bar = 	old_g
+													.selectAll("rect")
+													.data(function(d) { return new_deptx.map(function(state) { return {key: state, value: d[state]}; }); })
+						
+						old_bar.exit().remove()
+						
+						var new_bar = old_bar.enter().append("rect");
+						
+						new_bar.merge(old_bar)
+							.transition(750)
+						  .attr("x", function(d) { return x1(d.key); })
+						  .attr("y", function(d) { return y(d.value); })
+						  .attr("width", x1.bandwidth())
+						  .attr("height", function(d) { return height - y(d.value); })
+						  .attr("fill", function(d) { return z(d.key); });
+					
+							});
+				  
+	  	});
+
+					
+			dispatch.on("load_table", function(tbl_data) {
+
+				var filt_SOS_data= _.filter(tbl_data, (row, i) => {
+					return start_dept.includes(row.dept) &&  start_Q.includes(row.question)  && start_gender.includes(row.gender) ;
+				})
+							
+			debugger;							
+			_.map(filt_SOS_data, obj => _.extend(obj, {series: 50}));
+				
+			var table = d3.select("#tbl_div")
+							.append('table')
+							.attr("id","adv_tbl")
+							.attr("class", "adv_tbl");
+
+			var thead = table.append('thead')
+			var tbody = table.append('tbody')
+
+			thead
+				.append('tr')
+				.selectAll('th')
+				.data(col_labels)
+				.enter()
+				.append('th')
+				.text(function (label) { return label; });
+				
+			var rows_grp= tbody
+				.selectAll('tr')
+				.data(filt_SOS_data)
+						
+			var rows_grp_enter = rows_grp
+					.enter()
+					.append('tr');
+			
+					<!-- rows_grp.merge(rows_grp_enter) -->
+			rows_grp_enter.merge(rows_grp)
+			
+			var cells = rows_grp_enter
+						.selectAll('td')
+						.data(function (row) {
+							return columns.map(function (column) {
+								return {column: column, value: row[column], dept: row.dept};
+							});
+						})
+						.enter()
+						.append('td')
+						.html(function (d,i) { 
+
+							if(d.column === "Series"){
+								return '<svg width="20" height="20"><rect width="20" height="20"  fill="' + z(d.dept) + '"/></svg>';
+							}
+
+							else{
+
+							return isNaN(d.value) ? d.value: (d.column === "total" ? formatThousand(d.value) : formatPercent(d.value));
+							}
+						});
+							
+			dispatch.on("update_table", function(d) {
+				
+					var table_u = d3.select('table')
+
+					var tbody_u = table_u.select('tbody')
+			
+					var rows_grp_u = tbody_u
+													.selectAll('tr')
+													.data(d);
+					
+					rows_grp_u.exit().remove()	
+					
+					var rows_grp_enter_u = rows_grp_u
+															.enter()
+															.append('tr');
+		
+					var new_tds = rows_grp_u.merge(rows_grp_enter_u)
+						.selectAll('td')
+							.data(function (row, i) {
+								return columns.map(function (column) {
+									return {column: column, value: row[column],  dept: row.dept};
+								});
+							})
+
+					new_tds
+							.html(function (d, i) { 
+
+									if(d.column === "Series"){
+									return '<svg width="20" height="20"><rect width="20" height="20"  fill="' + z(d.dept) + '"/></svg>';
+									}
+
+									else{
+										return isNaN(d.value) ? d.value: (d.column === "total" ? formatThousand(d.value) : formatPercent(d.value));
+									}
+									
+								});
+					
+					new_tds
+						.enter()
+						.append('td')
+							.html(function (d) { 
+							
+									if(d.column === "Series"){
+									return  '<svg width="20" height="20"><rect width="20" height="20"  fill="' + z(d.dept) + '"/></svg>';;
+									}
+
+									else{
+									return isNaN(d.value) ? d.value: (d.column === "total" ? formatThousand(d.value) : formatPercent(d.value));
+									}
+									
+								});
+				
+					
+						});
+			  });
+			  
+			dispatch.call("load_choice", this, sos_tbl_data);		
+			dispatch.call("load_table", this, sos_tbl_data);
+			dispatch.call("load_chart", this, sos_graph_data);						
+
+</script>
