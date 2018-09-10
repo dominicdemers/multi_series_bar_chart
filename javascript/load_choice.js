@@ -1,15 +1,15 @@
 dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
 
-    var drop_box = function drop_box(id_name, variable, start_val) {
+    const drop_box = function drop_box(id_name, variable, start_val) {
 
-        if (variable == "Question") {
+        if (variable === "Question") {
 
-                // var question_infox = _.where(question_info, {label_en: start_val[0]})[0].variable_cat_en;
-                // var question_for_cat = _.where(question_info, {variable_cat_en: question_infox});
-            // debugger;
-                 var select_list = _.uniq(_.pluck(question_info, "label_en")).sort();
+                    let question_infox = _.where(question_info, {label_en: start_val[0]})[0].variable_cat_en;
+                    let questions_for_cat = _.where(question_info, {variable_cat_en: question_infox});
+
+                    var select_list = _.uniq(_.pluck(questions_for_cat, "label_en")).sort();
         }
-        else if (variable == "Category") {
+        else if (variable === "Category") {
             var select_list = _.uniq(_.pluck(question_info, "variable_cat_en")).sort();
         }
         else {
@@ -23,7 +23,7 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
                 'Not stated').sort();
         }
 
-        if (variable == "DEPT") {
+        if (variable === "DEPT") {
             select_list.splice(0, 0,
                 'All organisations',
                 'Large (>= 2, 000)',
@@ -35,11 +35,11 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
         }
 
 
-        var sel_var = d3.select(id_name).selectAll("option").data(select_list);
+        const sel_var = d3.select(id_name).selectAll("option").data(select_list);
 
         sel_var.exit().remove();
 
-        var sel_dept_enter = sel_var.enter().append("option");
+        const sel_dept_enter = sel_var.enter().append("option");
 
         sel_dept_enter.merge(sel_var).attr("value", function (d) {
             return d;
@@ -50,7 +50,7 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
 
         d3.select(id_name).property("value", start_val).on("change", function () {
 
-            var current_depts = _.map(d3.select("#sel_dept").property("selectedOptions"), function (x) {
+            const current_depts = _.map(d3.select("#sel_dept").property("selectedOptions"), function (x) {
                 return x.value;
             });
 
@@ -71,7 +71,7 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
                     return current_q_num.includes(row.Question);
                 }),"Question"))[0];
 
-                drop_box("#sel_question", "Question", current_label);
+                drop_box("#sel_question", "Question", [current_label]);
 
             }
             else {
@@ -97,7 +97,7 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
 
              var new_graph_data_1 = _.groupBy(_.filter(sos_graph_data[current_fol][current_reg][current_question], function (answer) {
                     return current_depts.includes(answer.final_dept_e);
-            }), 'question_value')
+            }), 'question_value');
 
 
             var new_graph_data = _.map(new_graph_data_1, function(value){

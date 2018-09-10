@@ -1,4 +1,4 @@
-dispatch.on("load_table", function (tbl_data, columns) {
+dispatch.on("load_table", function (tbl_data) {
 
     // var columns = _.without(sos_tbl_data.columns, "question", "tenure");
 
@@ -9,22 +9,23 @@ dispatch.on("load_table", function (tbl_data, columns) {
     // var new_question_keys = _.uniq(_.pluck(tbl_data, "Question"));
 
 
-    var filt_SOS_data = _.filter(tbl_data, function (row, i) {
+
+    const filt_SOS_data = _.filter(tbl_data, function (row) {
         return start_dept.includes(row.DEPT) && start_Q.includes(row.Question) && start_fol.includes(row.FOL) && start_reg.includes(row.Region);
     });
 
 
-    var new_answer_keys = _.uniq(_.flatten(_.pluck(filt_SOS_data, 'answer_keys')))
+    const new_answer_keys = _.uniq(_.flatten(_.pluck(filt_SOS_data, 'answer_keys')));
 
-    var columns = ["DEPT", "Series",...new_answer_keys];
+    const columns = ["DEPT", "Series",...new_answer_keys];
 
-    var table = d3.select("#tbl_div")
+    const table = d3.select("#tbl_div")
             .append('table')
             .attr("id", "adv_tbl")
             .attr("class", "adv_tbl");
 
-    var thead = table.append('thead');
-    var tbody = table.append('tbody');
+    const thead = table.append('thead');
+    const tbody = table.append('tbody');
 
     thead.append('tr').selectAll('th')
             .data(columns)
@@ -34,13 +35,13 @@ dispatch.on("load_table", function (tbl_data, columns) {
                 return (label === "DEPT") ? "" : label;
                 });
 
-    var rows_grp = tbody
+    const rows_grp = tbody
                     .selectAll('tr')
                     .data(filt_SOS_data);
                     // .data(filt_SOS_data);
 
 
-    var rows_grp_enter = rows_grp.enter().append('tr');
+    const rows_grp_enter = rows_grp.enter().append('tr');
 
     rows_grp_enter.merge(rows_grp);
 
@@ -52,7 +53,7 @@ dispatch.on("load_table", function (tbl_data, columns) {
                     });
                 }).enter()
                 .append('td')
-                .html(function (d, i) {
+                .html(function (d) {
                     if (d.column === "Series") {
                         return '<svg width="20" height="20"><rect width="20" height="20"  fill="' + z(d.dept) + '"/></svg>';
                     } else {
@@ -62,41 +63,41 @@ dispatch.on("load_table", function (tbl_data, columns) {
 
     dispatch.on("update_table", function (d) {
 
-        var answer_keys_2 = _.uniq(_.flatten(_.pluck(d, 'answer_keys')))
+        const answer_keys_2 = _.uniq(_.flatten(_.pluck(d, 'answer_keys')));
 
-        var new_columns = ["DEPT", "Series",...answer_keys_2];
+        const new_columns = ["DEPT", "Series",...answer_keys_2];
 
-        var table_u = d3.select('table');
+        const table_u = d3.select('table');
 
-        var tbody_u = table_u.select('tbody');
+        const tbody_u = table_u.select('tbody');
 
-        var thead_u = table_u.select('thead').select('tr');
+        const thead_u = table_u.select('thead').select('tr');
 
-        var thead_u_th = thead_u.selectAll('th').data(new_columns)
+        const thead_u_th = thead_u.selectAll('th').data(new_columns);
 
         thead_u_th.exit().remove();
 
-        var thead_u_th_enter = thead_u_th.enter().append('th')
+        const thead_u_th_enter = thead_u_th.enter().append('th');
 
         thead_u_th.merge(thead_u_th_enter)
             .text(function (label) {
                 return (label === "DEPT") ? "" : label;
             });
 
-        var rows_grp_u = tbody_u.selectAll('tr').data(d);
+        const rows_grp_u = tbody_u.selectAll('tr').data(d);
 
         rows_grp_u.exit().remove();
 
-        var rows_grp_enter_u = rows_grp_u.enter().append('tr');
+        const rows_grp_enter_u = rows_grp_u.enter().append('tr');
 
-        var new_tds = rows_grp_u.merge(rows_grp_enter_u).selectAll('td').data(function (row, i) {
+        const new_tds = rows_grp_u.merge(rows_grp_enter_u).selectAll('td').data(function (row) {
             return new_columns.map(function (column) {
                 return { column: column, value: row[column], dept: row.DEPT };
             });
         });
-        new_tds.exit().remove()
+        new_tds.exit().remove();
 
-        new_tds.html(function (d, i) {
+        new_tds.html(function (d) {
 
             if (d.column === "Series") {
                   return '<svg width="20" height="20"><rect width="20" height="20"  fill="' + z(d.dept) + '"/></svg>';
@@ -108,7 +109,7 @@ dispatch.on("load_table", function (tbl_data, columns) {
         new_tds.enter().append('td').html(function (d) {
 
             if (d.column === "Series") {
-                return '<svg width="20" height="20"><rect width="20" height="20"  fill="' + z(d.dept) + '"/></svg>';;
+                return '<svg width="20" height="20"><rect width="20" height="20"  fill="' + z(d.dept) + '"/></svg>';
             } else {
                 return isNaN(d.value) ?  d.value : d.column === "total" ?  d.value :  fmt_pct(d.value);
             }
