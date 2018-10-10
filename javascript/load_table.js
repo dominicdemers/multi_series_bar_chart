@@ -12,14 +12,24 @@ dispatch.on("load_table", function (tbl_data) {
 
     var columns = ["DEPT", "Series"].concat(_toConsumableArray(new_answer_keys));
 
-    var table = d3.select("#table_div").append('table').attr("id", "adv_tbl").attr("class", "adv_tbl");
+    var table = d3.select("#table_div")
+                    .append('table')
+                    .attr("id", "adv_tbl")
+                    .attr("class", "table table-condensed");
 
     var thead = table.append('thead');
     var tbody = table.append('tbody');
 
-    thead.append('tr').selectAll('th').data(columns).enter().append('th').text(function (label) {
-        return label === "DEPT" ? "" : label;
-    });
+    thead
+        .append('tr')
+        .attr("class", "active")
+        .selectAll('th')
+        .data(columns)
+        .enter()
+        .append('th')
+        .text(function (label) {
+            return label === "DEPT" ? "" : label;
+        });
 
     var rows_grp = tbody.selectAll('tr').data(filt_SOS_data);
     // .data(filt_SOS_data);
