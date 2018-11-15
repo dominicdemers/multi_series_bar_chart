@@ -3,5 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/javascript/load_choice_fr.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javascript/load_data_fr.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javascript/load_table_fr.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../snps_report/javascript/load_choice_fr.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../snps_report/javascript/load_data_fr.js" charset="UTF-8" />
   </component>
 </project>

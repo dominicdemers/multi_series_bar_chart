@@ -234,23 +234,33 @@ style="display:none;visibility:hidden"&amp;gt;&amp;lt;/iframe&amp;gt;</noscript>
 	<div id="chart">
 		<div id="container">
 			<div id="sel_div">
-                <select id="sel_fol"></select>
-                <select id="sel_reg"></select>
-				<select id="sel_dept" multiple="multiple" size=5>	</select>
-			</div>
-			
-			<div id="tbl_div">
+                <label for="sel_fol" style="font-weight:normal">Langue officielle:
+                    <select id="sel_fol" class="form-control"></select>
+                </label>
+                <label for="sel_reg" style="font-weight:normal">Région:
+                    <select id="sel_reg" class="form-control"></select>
+                </label>
+                <label for="sel_dept" style="font-weight:normal">Organisation:
+                    <select id="sel_dept" multiple="multiple" size=5 class="form-control">	</select>
+                </label>
                 <label for="sel_cat" style="font-weight:normal">Catégorie du répondant:
-                    <select id="sel_cat"></select>
+                    <select id="sel_cat" class="form-control"></select>
                 </label>
                 <label for="sel_question" style="font-weight:normal">Libellé de la question:
-				<select id="sel_question"></select>
+                    <select id="sel_question" class="form-control"></select>
                 </label>
                 <div>
                     <h1 style="font-size:16px; font-weight:normal";>Texte de la question:</h1>
                     <p id="quest_div"></p>
                 </div>
-				<svg width="750" height="500"></svg>
+			</div>
+			
+			<div id="tbl_div">
+
+				<svg width="750" height="500">
+                    <title>Graphique à séries multiples</title>
+                    <desc>Graphique à séries multiples associés aux données du tableau</desc>
+                </svg>
 				<div  id="table_div"> </div>
 			</div>
 		</div>

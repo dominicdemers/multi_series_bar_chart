@@ -234,26 +234,34 @@ style="display:none;visibility:hidden"&amp;gt;&amp;lt;/iframe&amp;gt;</noscript>
 	<div id="chart">
 		<div id="container">
 			<div id="sel_div">
-                <select id="sel_fol"></select>
-                <select id="sel_reg"></select>
-				<select id="sel_dept" multiple="multiple" size=5>	</select>
-			</div>
-			
-			<div id="tbl_div">
+                <label for="sel_fol" style="font-weight:normal">Official Language:
+                <select id="sel_fol" class="form-control"></select>
+                </label>
+                <label for="sel_reg" style="font-weight:normal">Region:
+                    <select id="sel_reg" class="form-control"></select>
+                </label>
+                <label for="sel_dept" style="font-weight:normal">Organisation:
+				    <select id="sel_dept" multiple="multiple" size=5 class="form-control">	</select>
+                </label>
                 <label for="sel_cat" style="font-weight:normal">Respondant category:
-                    <select id="sel_cat"></select>
+                    <select id="sel_cat" class="form-control"></select>
                 </label>
                 <label for="sel_question" style="font-weight:normal">Question label:
-				<select id="sel_question"></select>
+                    <select id="sel_question" class="form-control"></select>
                 </label>
                 <div>
                     <h1 style="font-size:16px; font-weight:normal";>Question text:</h1>
                     <p id="quest_div"></p>
                 </div>
-				<svg width="750" height="500"></svg>
-				<div  id="table_div"> </div>
-                <!--<a id="exp_data">Click here to Download2</a>-->
 			</div>
+			
+			<div id="tbl_div">
+  				<svg width="750" height="500">
+                    <title>multi-bar Chart</title>
+                    <desc>multi-bar Chart associated to the data below</desc>
+                </svg>
+				<div  id="table_div"> </div>
+  			</div>
 		</div>
 	</div>
 
