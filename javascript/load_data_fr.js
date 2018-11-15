@@ -17,7 +17,7 @@ let start_dept = ["Toutes les organisations"];
 let start_reg = ["Toutes les régions"];
 let start_fol = ["Toutes les langues officielles"];
 let start_Q = ["ADV_05_f"];
-let start_label = ["Depuis combien temps travaillez-vous conseillé en dotation FPF (ADV_05)"];
+let start_label = ["Depuis combien temps travaillez-vous conseiller en dotation FPF (ADV_05)"];
 let start_cat = ["Conseiller en dotation"];
 
 let fmt_pct = d3.format(".1%");
