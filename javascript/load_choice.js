@@ -32,11 +32,11 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
             select_list = _.uniq(_.pluck(question_info, "variable_cat_en")).sort();
         } else {
 
-            select_list = _.without(_.uniq(_.pluck(load_data, variable)), 'All organisations', 'Large (>= 2, 000)', 'Medium (500 to 1,999)', 'Small (100 to 499)', 'Very small (<100)', 'Not stated').sort();
+            select_list = _.without(_.uniq(_.pluck(load_data, variable)), 'All organisations', 'Large (>= 2, 000)', 'Medium (500 to 1,999)', 'Small (100 to 499)', 'Very small (<100)' ).sort();
         }
 
         if (variable === "DEPT") {
-            select_list.splice(0, 0, 'All organisations', 'Large (>= 2, 000)', 'Medium (500 to 1,999)', 'Small (100 to 499)', 'Very small (<100)', 'Not stated');
+            select_list.splice(0, 0, 'All organisations', 'Large (>= 2, 000)', 'Medium (500 to 1,999)', 'Small (100 to 499)', 'Very small (<100)');
         }
 
         let sel_var = d3.select(id_name).selectAll("option").data(select_list);
