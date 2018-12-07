@@ -77,11 +77,20 @@ function test_func(error, var_info, sos_tbl_data) {
             return _defineProperty({}, ans.question_value, ans.shr_w_resp);
         });
 
-
         let ans_keys = _.uniq(_.map(group, function (key) {
             return key.question_value;
         }));
 
+        let sorted_keys1 = _.uniq(_.map(group, function (key) {
+            return {
+                answer: key.question_value,
+                sorter:key.sorter
+            }
+        }));
+
+        let sorted_keys = _.map(sorted_keys1, function (ans) {
+            return _defineProperty({}, ans.answer, ans.sorter);
+        });
 
         let newObj2 =  _.extend.apply(null, mapped);
 
@@ -90,7 +99,8 @@ function test_func(error, var_info, sos_tbl_data) {
             DEPT: group[0].final_dept_e,
             FOL: group[0].FOL_e,
             Question: group[0].question_name,
-            answer_keys : ans_keys
+            answer_keys : ans_keys,
+            sorted_keys : sorted_keys
         });
 
 
