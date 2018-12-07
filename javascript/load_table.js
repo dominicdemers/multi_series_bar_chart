@@ -15,10 +15,17 @@ dispatch.on("load_table", function (tbl_data) {
         return _.contains(start_dept, row.DEPT) && _.contains(start_Q, row.Question) && _.contains(start_fol, row.FOL) && _.contains(start_reg, row.Region);
     });
 
-    let new_answer_keys = _.uniq(_.flatten(_.pluck(filt_SOS_data, 'answer_keys')));
+    let temp_answer_keys = _.uniq(_.flatten(_.pluck(filt_SOS_data, 'answer_keys')));
+
+    let new_answer_keys = _.sortBy(temp_answer_keys, function(element){
+
+        let rank = _.uniq(_.flatten(_.pluck(filt_SOS_data, 'sorted_keys')));
+        return rank[element];
+
+    });
+
 
     let columns = ["Series","DEPT"].concat(_toConsumableArray(new_answer_keys));
-
 
     let table = d3.select("#table_div")
                     .append('table')
@@ -69,7 +76,12 @@ dispatch.on("load_table", function (tbl_data) {
 
     dispatch.on("update_table", function (d) {
 
-        let answer_keys_2 = _.uniq(_.flatten(_.pluck(d, 'answer_keys')));
+        let temp_answer_keys = _.uniq(_.flatten(_.pluck(d, 'answer_keys')));
+
+        let answer_keys_2 = _.sortBy(temp_answer_keys, function(element){
+            let rank = _.uniq(_.flatten(_.pluck(d, 'sorted_keys')));
+            return rank[element];
+        });
 
         let new_columns = ["Series","DEPT"].concat(_toConsumableArray(answer_keys_2));
 

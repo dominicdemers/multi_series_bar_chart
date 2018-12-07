@@ -69,6 +69,7 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
                 }
             }
 
+
             let current_depts = selectedDeptArray;
 
             if (this.id === "sel_cat") {
@@ -108,7 +109,7 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
                 return _.contains(current_depts, row.DEPT) && _.contains([current_question], row.Question) && _.contains([current_fol], row.FOL) && _.contains([current_reg], row.Region);
             });
 
-            let new_graph_data_1 = _.groupBy(_.filter(sos_graph_data[current_fol][current_reg][current_question], function (answer) {
+             let new_graph_data_1 = _.groupBy(_.filter(sos_graph_data[current_fol][current_reg][current_question], function (answer) {
                 return _.contains(current_depts, answer.final_dept_e);
             }), 'question_value');
 
@@ -121,7 +122,8 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
 
                 let tempx1 =  _.extend.apply(null, mapped);
                 return _.extend(tempx1 , {
-                    Answer: value[0].question_value
+                    Answer: value[0].question_value,
+                    Sorter: value[0].sorter
                 })
 
                 // return newObj;
@@ -132,7 +134,6 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
             })[0]["full_variable_question"];
 
             d3.select("#quest_div").text(current_q_long);
-
 
             dispatch.call("update_table", this, new_TBL_data);
             dispatch.call("update_chart", this, new_graph_data);

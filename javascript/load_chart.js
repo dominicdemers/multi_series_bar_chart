@@ -70,7 +70,8 @@ dispatch.on("load_chart", function (chart_data) {
         // }]));
 
         return _.extend(tempx1 , {
-            Answer: value[0].question_value
+            Answer: value[0].question_value,
+            Sorter: value[0].sorter
         });
     });
 
@@ -237,7 +238,6 @@ dispatch.on("load_chart", function (chart_data) {
             .attr("x", function (d) {
             return x1(d.key);
         }).attr("y", function (d) {
-            // debugger;
             return _.isUndefined(d.value) ? y(0) : y(d.value);
         }).attr("width", function () {
             return x1.bandwidth();
