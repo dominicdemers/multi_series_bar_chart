@@ -81,6 +81,7 @@ dispatch.on("load_chart", function (chart_data) {
           .style("display","none");
     }
 
+
     x0.domain(_.keys(new_chart_data_1));
 
     x1.domain(new_depts).rangeRound([0, x0.bandwidth()]);
@@ -129,19 +130,6 @@ dispatch.on("load_chart", function (chart_data) {
     }).attr("dy", "0.32em").attr("fill", "#000").attr("font-weight", "bold").attr("text-anchor", "start");
 
     dispatch.on("update_chart", function (update_data) {
-
-            if(update_data.length == 0) {
-                d3.select("#no_response")
-                  .style("display","block");
-                d3.select("#table_div")
-                  .style("display","none");
-                console.log("From the good folder.")
-            } else {
-                d3.select("#no_response")
-                  .style("display","none");
-                d3.select("#table_div")
-                  .style("display","block");
-            }
 
 
             let selectedDeptArray = [];
