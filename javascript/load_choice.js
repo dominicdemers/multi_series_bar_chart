@@ -167,7 +167,7 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
 
 
 
-            let new_graph_data_1 = _.groupBy(_.filter(sos_graph_data[current_fol][current_reg][current_question], function (answer) 
+            let new_graph_data_1 = _.groupBy(_.filter(sos_graph_data[current_fol][current_reg][current_question], function (answer) {
                 return _.contains(current_depts, answer.final_dept_e);
             }), 'question_value');
 
