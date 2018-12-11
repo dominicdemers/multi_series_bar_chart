@@ -9,7 +9,9 @@ function _toConsumableArray(arr) {
     }
 }
 
+
 dispatch.on("load_table", function (tbl_data) {
+
 
     let filt_SOS_data = _.filter(tbl_data, function (row) {
         return _.contains(start_dept, row.DEPT) && _.contains(start_Q, row.Question) && _.contains(start_fol, row.FOL) && _.contains(start_reg, row.Region);
@@ -30,7 +32,15 @@ dispatch.on("load_table", function (tbl_data) {
     let table = d3.select("#table_div")
                     .append('table')
                     .attr("id", "adv_tbl")
-                    .attr("class", "table table-condensed");
+                    //.attr("class", "table table-condensed");
+                    .attr("class","wb-tables table table-striped table-hover")
+
+    $(document).ready( function () {
+        $('#adv_tbl').DataTable({
+            "paging": false,
+            "searching": false
+        });
+    } );
 
 
     table.append("caption").text("Staffing and Non-Partisanship Survey - Results");
@@ -75,6 +85,7 @@ dispatch.on("load_table", function (tbl_data) {
     });
 
     dispatch.on("update_table", function (d) {
+
 
         let temp_answer_keys = _.uniq(_.flatten(_.pluck(d, 'answer_keys')));
 
@@ -139,3 +150,7 @@ dispatch.on("load_table", function (tbl_data) {
             });
         });
 });
+
+
+
+
