@@ -112,7 +112,6 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
             });
 
 
-
             if(new_TBL_data.length == 0) {
                 d3.select("#no_response")
                   .style("display","block");
@@ -123,6 +122,8 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
             } else {
                 d3.select("#table_div")
                   .style("display","block");
+                d3.select("#no_response")
+                  .style("display","none");
 
                 if (current_depts.length > 1){
                 
@@ -141,10 +142,7 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
                         d3.select("#no_response_msg")
                           .text("The following selected oganizations have no matching data from the selected filters: " + nodata_depts);
                     }
-                } else {
-                    d3.select("#no_response")
-                      .style("display","none");
-                }
+                } 
             }
             
             if (current_depts.length > 1) {
