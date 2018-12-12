@@ -72,6 +72,7 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
 
             let current_depts = selectedDeptArray;
 
+
             if (this.id === "sel_cat") {
 
                 let current_cat = d3.select("#sel_cat").property("value");
@@ -105,11 +106,66 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
             let current_fol = d3.select("#sel_fol").property("value");
             let current_reg = d3.select("#sel_reg").property("value");
 
+
             let new_TBL_data = _.filter(load_data, function (row) {
                 return _.contains(current_depts, row.DEPT) && _.contains([current_question], row.Question) && _.contains([current_fol], row.FOL) && _.contains([current_reg], row.Region);
             });
 
-             let new_graph_data_1 = _.groupBy(_.filter(sos_graph_data[current_fol][current_reg][current_question], function (answer) {
+
+            if(new_TBL_data.length == 0) {
+                d3.select("#no_response")
+                  .style("display","block");
+                d3.select("#table_div")
+                  .style("display","none");
+                d3.select("#no_response_msg")
+                  .text("There is no survey data matching the selected filters.");
+            } else {
+                d3.select("#table_div")
+                  .style("display","block");
+                d3.select("#no_response")
+                  .style("display","none");
+
+                if (current_depts.length > 1){
+                
+                    let available_depts = [];
+
+                    for (i = 0; i < new_TBL_data.length ; i++) {
+                        if (!_.contains(available_depts, new_TBL_data[i].DEPT)) {
+                            available_depts.push(new_TBL_data[i].DEPT);
+                        }
+                    }
+                    let nodata_depts = _.difference(current_depts, available_depts);
+
+                    if (nodata_depts.length > 0) {
+                        d3.select("#no_response")
+                          .style("display","block");
+                        d3.select("#no_response_msg")
+                          .text("The following selected oganizations have no matching data from the selected filters: " + nodata_depts);
+                    }
+                } 
+            }
+            
+            if (current_depts.length > 1) {
+
+                let available_depts = [];
+
+                for (i = 0; i < new_TBL_data.length ; i++) {
+                    if (!_.contains(available_depts, new_TBL_data[i].DEPT)) {
+                        available_depts.push(new_TBL_data[i].DEPT);
+                    }
+                }
+                let nodata_depts = _.difference(current_depts, available_depts);
+
+                if (nodata_depts.length > 0) {
+                    d3.select("#no_response")
+                      .style("display","block");
+                }
+            }
+            
+
+
+
+            let new_graph_data_1 = _.groupBy(_.filter(sos_graph_data[current_fol][current_reg][current_question], function (answer) {
                 return _.contains(current_depts, answer.final_dept_e);
             }), 'question_value');
 
