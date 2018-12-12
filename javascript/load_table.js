@@ -32,8 +32,7 @@ dispatch.on("load_table", function (tbl_data) {
     let table = d3.select("#table_div")
                     .append('table')
                     .attr("id", "adv_tbl")
-                    //.attr("class", "table table-condensed");
-                    .attr("class","wb-tables table table-striped table-hover")
+                    .attr("class","table table-striped table-hover")
 
     $(document).ready( function () {
         $('#adv_tbl').DataTable({
@@ -86,6 +85,7 @@ dispatch.on("load_table", function (tbl_data) {
 
     dispatch.on("update_table", function (d) {
 
+        $('#adv_tbl').DataTable().destroy(); 
 
         let temp_answer_keys = _.uniq(_.flatten(_.pluck(d, 'answer_keys')));
 
@@ -135,7 +135,7 @@ dispatch.on("load_table", function (tbl_data) {
                 } else {
                     return isNaN(d.value) ? d.value : d.column === "total" ? d.value : fmt_pct(d.value);
                 }
-        });
+            });
 
         new_tds.enter().append('td')
             .attr("scope",function (d,i) {
@@ -148,7 +148,12 @@ dispatch.on("load_table", function (tbl_data) {
                     return isNaN(d.value) ? d.value : d.column === "total" ? d.value : fmt_pct(d.value);
                 }
             });
-        });
+       
+        $('#adv_tbl').DataTable({
+                "paging": false,
+                "searching": false
+        });     
+    });
 });
 
 
