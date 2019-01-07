@@ -115,7 +115,7 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
                 d3.select("#table_div")
                   .style("display","none");
                 d3.select("#no_response_msg")
-                  .text("Aucun résultats de sondage trouvés correspondants aux filtres sélectionnés.");
+                  .text("Aucun résultat de sondage trouvés correspondants aux filtres sélectionnés.");
             } else {
                 d3.select("#table_div")
                   .style("display","block");
