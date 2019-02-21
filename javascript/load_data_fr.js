@@ -59,8 +59,8 @@ function test_func(error, var_info, sos_tbl_data) {
         console.log("Error on data load");
     }
 
-    let sos_graph_data = _.chain(sos_tbl_data).groupBy('FOL_f').mapObject(function (fol) {
-        return _.groupBy(fol, 'Region_f');
+    let sos_graph_data = _.chain(sos_tbl_data).groupBy('fol_f').mapObject(function (fol) {
+        return _.groupBy(fol, 'region_f');
     }).mapObject(function (fol) {
         return _.mapObject(fol, function (reg) {
             return _.groupBy(reg, 'question_name');
@@ -68,7 +68,7 @@ function test_func(error, var_info, sos_tbl_data) {
     }).value();
 
     let groups = _.groupBy(sos_tbl_data, function (value) {
-        return value.FOL_f + '#' + value.Region_f + '#' + value.question_name + '#' + value.final_dept_f;
+        return value.fol_f + '#' + value.region_f + '#' + value.question_name + '#' + value.final_dept_f;
     });
 
     let new_table_data = _.map(groups, function (group) {
@@ -96,15 +96,13 @@ function test_func(error, var_info, sos_tbl_data) {
         let newObj2 =  _.extend.apply(null, mapped);
 
         return _.extend(newObj2, {
-            Region: group[0].Region_f,
+            Region: group[0].region_f,
             DEPT: group[0].final_dept_f,
-            FOL: group[0].FOL_f,
+            FOL: group[0].fol_f,
             Question: group[0].question_name,
             answer_keys : ans_keys,
             sorted_keys : sorted_keys
         });
-
-
         //return newObj3;
     });
 
@@ -115,8 +113,8 @@ function test_func(error, var_info, sos_tbl_data) {
 }
 function init() {
     d3.queue()
-        .defer(d3.csv, 'csv/VARIABLES_FOR_D3.csv')
-        .defer(d3.csv, 'csv/SNPS_FINAL_FR.csv')
+        .defer(d3.csv, 'https://www.canada.ca/content/dam/psc-cfp/documents/data-donnees/snps-sdip/CFPPSC_SNPS14V.csv')
+        .defer(d3.csv, 'https://www.canada.ca/content/dam/psc-cfp/documents/data-donnees/snps-sdip/CFPPSC_SNPS14F.csv')
         .await(test_func); //only function name is needed
 }
 

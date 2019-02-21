@@ -59,8 +59,8 @@ function test_func(error, var_info, sos_tbl_data) {
         console.log("Error on data load");
     }
 
-    let sos_graph_data = _.chain(sos_tbl_data).groupBy('FOL_e').mapObject(function (fol) {
-        return _.groupBy(fol, 'Region_e');
+    let sos_graph_data = _.chain(sos_tbl_data).groupBy('fol_e').mapObject(function (fol) {
+        return _.groupBy(fol, 'region_e');
     }).mapObject(function (fol) {
         return _.mapObject(fol, function (reg) {
             return _.groupBy(reg, 'question_name');
@@ -68,7 +68,7 @@ function test_func(error, var_info, sos_tbl_data) {
     }).value();
 
     let groups = _.groupBy(sos_tbl_data, function (value) {
-        return value.FOL_e + '#' + value.Region_e + '#' + value.question_name + '#' + value.final_dept_e;
+        return value.fol_e + '#' + value.region_e + '#' + value.question_name + '#' + value.final_dept_e;
     });
 
     let new_table_data = _.map(groups, function (group) {
@@ -95,9 +95,9 @@ function test_func(error, var_info, sos_tbl_data) {
         let newObj2 =  _.extend.apply(null, mapped);
 
         return _.extend(newObj2, {
-            Region: group[0].Region_e,
+            Region: group[0].region_e,
             DEPT: group[0].final_dept_e,
-            FOL: group[0].FOL_e,
+            FOL: group[0].fol_e,
             Question: group[0].question_name,
             answer_keys : ans_keys,
             sorted_keys : sorted_keys
@@ -112,11 +112,21 @@ function test_func(error, var_info, sos_tbl_data) {
     dispatch.call("load_chart", undefined, sos_graph_data);
 
 }
+// function init() {
+//
+//     d3.queue()
+//         .defer(d3.csv, 'csv/VARIABLES_FOR_D3.csv')
+//         .defer(d3.csv, 'csv/SNPS_FINAL_EN.csv')
+//         .await(test_func); //only function name is needed
+// }
+
 function init() {
+
     d3.queue()
-        .defer(d3.csv, 'csv/VARIABLES_FOR_D3.csv')
-        .defer(d3.csv, 'csv/SNPS_FINAL_EN.csv')
+        .defer(d3.csv, 'https://www.canada.ca/content/dam/psc-cfp/documents/data-donnees/snps-sdip/CFPPSC_SNPS14V.csv')
+        .defer(d3.csv, 'https://www.canada.ca/content/dam/psc-cfp/documents/data-donnees/snps-sdip/CFPPSC_SNPS14E.csv')
         .await(test_func); //only function name is needed
 }
+
 
 init();
