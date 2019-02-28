@@ -1,0 +1,501 @@
+final_dept_e,Region_e,FOL_e,question_name,question_value,total_respondants,total_w_resp,shr_w_resp,sorter
+Administrative Tribunals Support Service of Canada,All regions,All official languages,MAN_45BG_e,No,18,40.8476,1,19
+Administrative Tribunals Support Service of Canada,All regions,All official languages,MAN_45BH_e,No,18,40.8476,1,19
+Administrative Tribunals Support Service of Canada,All regions,English,MAN_25C_e,No,12,27.2276,1,19
+Administrative Tribunals Support Service of Canada,All regions,English,MAN_50F_e,Yes,12,27.2276,1,18
+Administrative Tribunals Support Service of Canada,All regions,English,MAN_50G_e,Yes,12,27.2276,1,18
+Administrative Tribunals Support Service of Canada,All regions,French,MAN_10B_e,Yes,13,31.4275,1,18
+Administrative Tribunals Support Service of Canada,All regions,French,MAN_45BG_e,No,14,31.5175,1,19
+Administrative Tribunals Support Service of Canada,All regions,French,MAN_45BH_e,No,14,31.5175,1,19
+Administrative Tribunals Support Service of Canada,National Capital Region,All official languages,MAN_45BG_e,No,17,38.604,1,19
+Administrative Tribunals Support Service of Canada,National Capital Region,All official languages,MAN_45BH_e,No,17,38.604,1,19
+Administrative Tribunals Support Service of Canada,National Capital Region,English,MAN_25C_e,No,11,24.984,1,19
+Administrative Tribunals Support Service of Canada,National Capital Region,English,MAN_50F_e,Yes,11,24.984,1,18
+Administrative Tribunals Support Service of Canada,National Capital Region,English,MAN_50G_e,Yes,11,24.984,1,18
+Administrative Tribunals Support Service of Canada,National Capital Region,French,MAN_10B_e,Yes,13,31.4275,1,18
+Administrative Tribunals Support Service of Canada,National Capital Region,French,MAN_45BG_e,No,14,31.5175,1,19
+Administrative Tribunals Support Service of Canada,National Capital Region,French,MAN_45BH_e,No,14,31.5175,1,19
+Agriculture and Agri-Food Canada,All regions,All official languages,ADV_15F_e,Yes,25,39.2532,1,18
+Agriculture and Agri-Food Canada,All regions,All official languages,ADV_15H_e,Yes,25,39.2532,1,18
+Agriculture and Agri-Food Canada,All regions,English,ADV_15F_e,Yes,16,25.3671,1,18
+Agriculture and Agri-Food Canada,All regions,English,ADV_15H_e,Yes,16,25.3671,1,18
+Agriculture and Agri-Food Canada,All regions,French,MAN_40BG_e,No,46,99.4885,1,19
+Agriculture and Agri-Food Canada,All regions,French,MAN_45BG_e,No,49,106.7038,1,19
+Agriculture and Agri-Food Canada,Atlantic,All official languages,MAN_35A_e,No,22,50.3741,1,19
+Agriculture and Agri-Food Canada,Atlantic,All official languages,MAN_45BD_e,No,13,28.9938,1,19
+Agriculture and Agri-Food Canada,Atlantic,All official languages,MAN_45BI_e,No,13,28.9938,1,19
+Agriculture and Agri-Food Canada,Atlantic,All official languages,MAN_50E_e,No,16,37.4618,1,19
+Agriculture and Agri-Food Canada,Atlantic,All official languages,MAN_50I_e,No,16,37.4618,1,19
+Agriculture and Agri-Food Canada,Atlantic,All official languages,MAN_55C_e,None,13,28.0478,1,20
+Agriculture and Agri-Food Canada,Atlantic,English,MAN_35A_e,No,17,39.2879,1,19
+Agriculture and Agri-Food Canada,Atlantic,English,MAN_50A_e,No,13,30.727,1,19
+Agriculture and Agri-Food Canada,Atlantic,English,MAN_50E_e,No,13,30.727,1,19
+Agriculture and Agri-Food Canada,Atlantic,English,MAN_50I_e,No,13,30.727,1,19
+Agriculture and Agri-Food Canada,Atlantic,English,MAN_55C_e,None,11,24.1352,1,20
+Agriculture and Agri-Food Canada,Atlantic,French,ALL_25_e,No,29,56.7308,1,19
+Agriculture and Agri-Food Canada,"British Columbia, Yukon",All official languages,MAN_50F_e,Yes,10,21.5364,1,18
+Agriculture and Agri-Food Canada,National Capital Region,All official languages,ADV_15F_e,Yes,13,20.0577,1,18
+Agriculture and Agri-Food Canada,National Capital Region,All official languages,ADV_15H_e,Yes,13,20.0577,1,18
+Agriculture and Agri-Food Canada,National Capital Region,English,MAN_55C_e,None,79,171.5586,1,20
+Agriculture and Agri-Food Canada,National Capital Region,French,MAN_10B_e,Yes,15,35.2462,1,18
+Agriculture and Agri-Food Canada,National Capital Region,French,MAN_40BG_e,No,36,74.9432,1,19
+Agriculture and Agri-Food Canada,National Capital Region,French,MAN_45BG_e,No,31,67.1043,1,19
+Agriculture and Agri-Food Canada,Ontario (excluding the National Capital Region),All official languages,MAN_45BD_e,No,13,33.1199,1,19
+Agriculture and Agri-Food Canada,Ontario (excluding the National Capital Region),All official languages,MAN_45BG_e,No,13,33.1199,1,19
+Agriculture and Agri-Food Canada,Ontario (excluding the National Capital Region),All official languages,MAN_50F_e,Yes,18,40.9302,1,18
+Agriculture and Agri-Food Canada,Ontario (excluding the National Capital Region),English,MAN_45BD_e,No,13,33.1199,1,19
+Agriculture and Agri-Food Canada,Ontario (excluding the National Capital Region),English,MAN_45BG_e,No,13,33.1199,1,19
+Agriculture and Agri-Food Canada,Ontario (excluding the National Capital Region),English,MAN_50F_e,Yes,18,40.9302,1,18
+Agriculture and Agri-Food Canada,"Prairies, Nunavut, Northwest Territories",All official languages,MAN_40BD_e,No,27,54.8274,1,19
+Agriculture and Agri-Food Canada,"Prairies, Nunavut, Northwest Territories",All official languages,MAN_45BG_e,No,64,141.6615,1,19
+Agriculture and Agri-Food Canada,"Prairies, Nunavut, Northwest Territories",English,MAN_40BD_e,No,26,52.5716,1,19
+Agriculture and Agri-Food Canada,"Prairies, Nunavut, Northwest Territories",English,MAN_45BG_e,No,62,136.0171,1,19
+Agriculture and Agri-Food Canada,"Prairies, Nunavut, Northwest Territories",French,ALL_25_e,No,23,49.8555,1,19
+Agriculture and Agri-Food Canada,Quebec (excluding the National Capital Region),All official languages,ALL_25_e,No,168,379.1038,1,19
+Agriculture and Agri-Food Canada,Quebec (excluding the National Capital Region),All official languages,MAN_35A_e,No,22,50.2935,1,19
+Agriculture and Agri-Food Canada,Quebec (excluding the National Capital Region),All official languages,MAN_45BE_e,No,13,27.0009,1,19
+Agriculture and Agri-Food Canada,Quebec (excluding the National Capital Region),All official languages,MAN_45BG_e,No,13,27.0009,1,19
+Agriculture and Agri-Food Canada,Quebec (excluding the National Capital Region),All official languages,MAN_45BI_e,No,13,27.0009,1,19
+Agriculture and Agri-Food Canada,Quebec (excluding the National Capital Region),All official languages,MAN_50J_e,No,17,39.8315,1,19
+Agriculture and Agri-Food Canada,Quebec (excluding the National Capital Region),All official languages,MAN_55C_e,None,17,37.5762,1,20
+Agriculture and Agri-Food Canada,Quebec (excluding the National Capital Region),English,ALL_25_e,No,15,33.4105,1,19
+Agriculture and Agri-Food Canada,Quebec (excluding the National Capital Region),French,ALL_25_e,No,153,345.6933,1,19
+Agriculture and Agri-Food Canada,Quebec (excluding the National Capital Region),French,MAN_35A_e,No,21,48.1178,1,19
+Agriculture and Agri-Food Canada,Quebec (excluding the National Capital Region),French,MAN_45BE_e,No,12,24.8252,1,19
+Agriculture and Agri-Food Canada,Quebec (excluding the National Capital Region),French,MAN_45BG_e,No,12,24.8252,1,19
+Agriculture and Agri-Food Canada,Quebec (excluding the National Capital Region),French,MAN_45BI_e,No,12,24.8252,1,19
+Agriculture and Agri-Food Canada,Quebec (excluding the National Capital Region),French,MAN_50J_e,No,17,39.8315,1,19
+Agriculture and Agri-Food Canada,Quebec (excluding the National Capital Region),French,MAN_55C_e,None,17,37.5762,1,20
+All organisations,All regions,Not stated,MAN_10B_e,Yes,29,70.821,1,18
+All organisations,All regions,Not stated,MAN_40BG_e,No,36,87.3431,1,19
+All organisations,All regions,Not stated,MAN_45BG_e,No,29,65.2732,1,19
+All organisations,All regions,Not stated,MAN_45BH_e,No,29,65.2732,1,19
+All organisations,All regions,Not stated,MAN_55C_e,None,38,91.1565,1,20
+All organisations,All regions,Not stated,MAN_70G_e,No,10,20.9659,1,19
+All organisations,Atlantic,French,ADV_15D_e,Yes,26,47.2497,1,18
+All organisations,Atlantic,French,ADV_15E_e,Yes,26,47.2497,1,18
+All organisations,Atlantic,French,ADV_15F_e,Yes,26,47.2497,1,18
+All organisations,Atlantic,French,ADV_15H_e,Yes,26,47.2497,1,18
+All organisations,Atlantic,French,MAN_35BB_e,No,28,68.5696,1,19
+All organisations,Atlantic,French,MAN_35BG_e,No,28,68.5696,1,19
+All organisations,Atlantic,French,MAN_45BG_e,No,126,277.8179,1,19
+All organisations,Atlantic,Not stated,ALL_25_e,No,24,52.1301,1,19
+All organisations,"British Columbia, Yukon",French,MAN_10B_e,Yes,20,44.4428,1,18
+All organisations,"British Columbia, Yukon",French,MAN_45BG_e,No,19,42.0973,1,19
+All organisations,"British Columbia, Yukon",French,MAN_45BH_e,No,19,42.0973,1,19
+All organisations,"British Columbia, Yukon",French,MAN_45BI_e,No,19,42.0973,1,19
+All organisations,"British Columbia, Yukon",French,MAN_55C_e,None,21,43.8871,1,20
+All organisations,National Capital Region,French,MAN_35BB_e,No,162,355.0413,1,19
+All organisations,National Capital Region,Not stated,MAN_10B_e,Yes,11,25.4169,1,18
+All organisations,National Capital Region,Not stated,MAN_40BG_e,No,22,52.1717,1,19
+All organisations,National Capital Region,Not stated,MAN_45BG_e,No,14,27.733,1,19
+All organisations,National Capital Region,Not stated,MAN_45BH_e,No,14,27.733,1,19
+All organisations,National Capital Region,Not stated,MAN_55C_e,None,17,39.3575,1,20
+All organisations,Not stated,All official languages,MAN_55C_e,None,18,40.5495,1,20
+All organisations,Not stated,English,MAN_50E_e,No,12,25.3713,1,19
+All organisations,Not stated,English,MAN_50F_e,Yes,14,29.1639,1,18
+All organisations,Not stated,English,MAN_50G_e,Yes,14,29.1639,1,18
+All organisations,Not stated,English,MAN_50H_e,Yes,14,29.1639,1,18
+All organisations,Not stated,English,MAN_50J_e,No,12,24.8346,1,19
+All organisations,Not stated,English,MAN_55C_e,None,10,21.7531,1,20
+All organisations,Not stated,French,ALL_25_e,No,30,62.0597,1,19
+All organisations,Ontario (excluding the National Capital Region),All official languages,MAN_35BB_e,No,103,242.4195,1,19
+All organisations,Ontario (excluding the National Capital Region),All official languages,MAN_45BG_e,No,423,979.0103,1,19
+All organisations,Ontario (excluding the National Capital Region),English,MAN_35BB_e,No,86,199.9295,1,19
+All organisations,Ontario (excluding the National Capital Region),English,MAN_45BG_e,No,381,881.335,1,19
+All organisations,Ontario (excluding the National Capital Region),French,MAN_35BB_e,No,16,40.6809,1,19
+All organisations,Ontario (excluding the National Capital Region),French,MAN_35BG_e,No,16,40.6809,1,19
+All organisations,Ontario (excluding the National Capital Region),French,MAN_45BG_e,No,38,87.1952,1,19
+All organisations,Ontario (excluding the National Capital Region),Not stated,ALL_25_e,No,48,111.9332,1,19
+All organisations,Outside of Canada,All official languages,MAN_45BG_e,No,87,187.4022,1,19
+All organisations,Outside of Canada,English,MAN_45BE_e,No,47,100.2654,1,19
+All organisations,Outside of Canada,English,MAN_45BG_e,No,47,100.2654,1,19
+All organisations,Outside of Canada,French,MAN_10B_e,Yes,41,94.0205,1,18
+All organisations,Outside of Canada,French,MAN_40BG_e,No,10,24.0553,1,19
+All organisations,Outside of Canada,French,MAN_45BD_e,No,40,87.1368,1,19
+All organisations,Outside of Canada,French,MAN_45BG_e,No,40,87.1368,1,19
+All organisations,"Prairies, Nunavut, Northwest Territories",All official languages,MAN_45BG_e,No,634,1413.0499,1,19
+All organisations,"Prairies, Nunavut, Northwest Territories",English,MAN_45BG_e,No,591,1309.504,1,19
+All organisations,"Prairies, Nunavut, Northwest Territories",French,MAN_35BB_e,No,11,25.5286,1,19
+All organisations,"Prairies, Nunavut, Northwest Territories",French,MAN_35BH_e,No,11,25.5286,1,19
+All organisations,"Prairies, Nunavut, Northwest Territories",French,MAN_45BG_e,No,35,83.4041,1,19
+All organisations,"Prairies, Nunavut, Northwest Territories",French,MAN_55C_e,None,46,105.4392,1,20
+All organisations,"Prairies, Nunavut, Northwest Territories",Not stated,ALL_25_e,No,29,63.6408,1,19
+All organisations,"Prairies, Nunavut, Northwest Territories",Not stated,MAN_25B_e,Yes,10,24.8947,1,18
+All organisations,"Prairies, Nunavut, Northwest Territories",Not stated,MAN_25C_e,No,10,24.8947,1,19
+All organisations,"Prairies, Nunavut, Northwest Territories",Not stated,MAN_35A_e,No,10,24.8947,1,19
+All organisations,Quebec (excluding the National Capital Region),All official languages,MAN_45BG_e,No,502,1107.7001,1,19
+All organisations,Quebec (excluding the National Capital Region),English,MAN_35BB_e,No,10,22.1496,1,19
+All organisations,Quebec (excluding the National Capital Region),English,MAN_35BF_e,No,10,22.1496,1,19
+All organisations,Quebec (excluding the National Capital Region),English,MAN_35BG_e,No,10,22.1496,1,19
+All organisations,Quebec (excluding the National Capital Region),English,MAN_45BG_e,No,51,111.4217,1,19
+All organisations,Quebec (excluding the National Capital Region),French,MAN_45BG_e,No,449,991.5358,1,19
+All organisations,Quebec (excluding the National Capital Region),Not stated,ALL_25_e,No,19,41.8695,1,19
+Atlantic Canada Opportunities Agency,All regions,All official languages,MAN_45BF_e,No,22,45.893,1,19
+Atlantic Canada Opportunities Agency,All regions,All official languages,MAN_45BG_e,No,22,45.893,1,19
+Atlantic Canada Opportunities Agency,All regions,All official languages,MAN_45BH_e,No,22,45.893,1,19
+Atlantic Canada Opportunities Agency,All regions,All official languages,MAN_50F_e,Yes,45,87.9931,1,18
+Atlantic Canada Opportunities Agency,All regions,English,MAN_35A_e,No,30,60.1581,1,19
+Atlantic Canada Opportunities Agency,All regions,English,MAN_40BD_e,No,21,42.5928,1,19
+Atlantic Canada Opportunities Agency,All regions,English,MAN_45BF_e,No,16,33.7507,1,19
+Atlantic Canada Opportunities Agency,All regions,English,MAN_45BG_e,No,16,33.7507,1,19
+Atlantic Canada Opportunities Agency,All regions,English,MAN_45BH_e,No,16,33.7507,1,19
+Atlantic Canada Opportunities Agency,All regions,English,MAN_50F_e,Yes,28,56.0529,1,18
+Atlantic Canada Opportunities Agency,All regions,English,MAN_50J_e,No,19,38.3874,1,19
+Atlantic Canada Opportunities Agency,All regions,French,MAN_25C_e,No,18,33.9928,1,19
+Atlantic Canada Opportunities Agency,All regions,French,MAN_50F_e,Yes,17,31.9402,1,18
+Atlantic Canada Opportunities Agency,All regions,French,MAN_50H_e,Yes,16,30.3227,1,18
+Atlantic Canada Opportunities Agency,All regions,French,MAN_55C_e,None,11,21.5491,1,20
+Atlantic Canada Opportunities Agency,Atlantic,All official languages,MAN_45BF_e,No,21,43.643,1,19
+Atlantic Canada Opportunities Agency,Atlantic,All official languages,MAN_45BG_e,No,21,43.643,1,19
+Atlantic Canada Opportunities Agency,Atlantic,All official languages,MAN_45BH_e,No,21,43.643,1,19
+Atlantic Canada Opportunities Agency,Atlantic,All official languages,MAN_50F_e,Yes,42,82.2767,1,18
+Atlantic Canada Opportunities Agency,Atlantic,English,MAN_35A_e,No,28,56.6917,1,19
+Atlantic Canada Opportunities Agency,Atlantic,English,MAN_40BD_e,No,19,39.1264,1,19
+Atlantic Canada Opportunities Agency,Atlantic,English,MAN_45BF_e,No,16,33.7507,1,19
+Atlantic Canada Opportunities Agency,Atlantic,English,MAN_45BG_e,No,16,33.7507,1,19
+Atlantic Canada Opportunities Agency,Atlantic,English,MAN_45BH_e,No,16,33.7507,1,19
+Atlantic Canada Opportunities Agency,Atlantic,English,MAN_50F_e,Yes,26,52.5865,1,18
+Atlantic Canada Opportunities Agency,Atlantic,English,MAN_50J_e,No,17,34.921,1,19
+Atlantic Canada Opportunities Agency,Atlantic,French,MAN_25C_e,No,17,31.7428,1,19
+Atlantic Canada Opportunities Agency,Atlantic,French,MAN_50F_e,Yes,16,29.6902,1,18
+Atlantic Canada Opportunities Agency,Atlantic,French,MAN_50H_e,Yes,15,28.0727,1,18
+Atlantic Canada Opportunities Agency,Atlantic,French,MAN_55C_e,None,10,19.2991,1,20
+Atlantic Canada Opportunities Agency,National Capital Region,All official languages,ALL_20A_e,To a great extent,15,25.8911,1,12
+Atlantic Canada Opportunities Agency,National Capital Region,All official languages,ALL_20B_e,To a great extent,15,25.8911,1,12
+Atlantic Canada Opportunities Agency,National Capital Region,All official languages,ALL_25_e,No,15,25.8911,1,19
+Atlantic Canada Opportunities Agency,National Capital Region,English,ALL_20A_e,To a great extent,12,19.8625,1,12
+Atlantic Canada Opportunities Agency,National Capital Region,English,ALL_20B_e,To a great extent,12,19.8625,1,12
+Atlantic Canada Opportunities Agency,National Capital Region,English,ALL_25_e,No,12,19.8625,1,19
+Canada Border Services Agency,All regions,All official languages,MAN_35BB_e,No,32,77.8241,1,19
+Canada Border Services Agency,All regions,All official languages,MAN_35BG_e,No,32,77.8241,1,19
+Canada Border Services Agency,All regions,All official languages,MAN_45BG_e,No,133,311.682,1,19
+Canada Border Services Agency,All regions,English,MAN_35BB_e,No,22,54.0275,1,19
+Canada Border Services Agency,All regions,English,MAN_35BD_e,No,22,54.0275,1,19
+Canada Border Services Agency,All regions,English,MAN_35BG_e,No,22,54.0275,1,19
+Canada Border Services Agency,All regions,English,MAN_45BG_e,No,76,181.1049,1,19
+Canada Border Services Agency,All regions,French,MAN_35BA_e,No,10,23.7966,1,19
+Canada Border Services Agency,All regions,French,MAN_35BB_e,No,10,23.7966,1,19
+Canada Border Services Agency,All regions,French,MAN_35BG_e,No,10,23.7966,1,19
+Canada Border Services Agency,All regions,French,MAN_45BG_e,No,55,125.5842,1,19
+Canada Border Services Agency,All regions,French,MAN_70B_e,No,17,38.7008,1,19
+Canada Border Services Agency,All regions,French,MAN_70C_e,No,17,38.7008,1,19
+Canada Border Services Agency,All regions,Not stated,ALL_25_e,No,21,49.4696,1,19
+Canada Border Services Agency,Atlantic,All official languages,MAN_10B_e,Yes,19,46.0958,1,18
+Canada Border Services Agency,Atlantic,All official languages,MAN_50H_e,Yes,13,30.9186,1,18
+Canada Border Services Agency,Atlantic,All official languages,MAN_55C_e,None,10,23.4093,1,20
+Canada Border Services Agency,Atlantic,English,MAN_10B_e,Yes,16,38.6921,1,18
+Canada Border Services Agency,Atlantic,English,MAN_50H_e,Yes,11,26.3526,1,18
+Canada Border Services Agency,"British Columbia, Yukon",All official languages,MAN_40BD_e,No,24,57.3467,1,19
+Canada Border Services Agency,"British Columbia, Yukon",All official languages,MAN_55C_e,None,22,52.4864,1,20
+Canada Border Services Agency,"British Columbia, Yukon",English,MAN_40BD_e,No,23,54.8788,1,19
+Canada Border Services Agency,"British Columbia, Yukon",English,MAN_55C_e,None,22,52.4864,1,20
+Canada Border Services Agency,National Capital Region,All official languages,MAN_35BA_e,No,13,32.0472,1,19
+Canada Border Services Agency,National Capital Region,All official languages,MAN_35BB_e,No,13,32.0472,1,19
+Canada Border Services Agency,National Capital Region,All official languages,MAN_35BG_e,No,13,32.0472,1,19
+Canada Border Services Agency,National Capital Region,All official languages,MAN_45BG_e,No,78,178.1309,1,19
+Canada Border Services Agency,National Capital Region,English,MAN_10B_e,Yes,47,114.934,1,18
+Canada Border Services Agency,National Capital Region,English,MAN_45BG_e,No,43,100.5355,1,19
+Canada Border Services Agency,National Capital Region,French,MAN_45BG_e,No,33,72.6025,1,19
+Canada Border Services Agency,National Capital Region,French,MAN_45BH_e,No,33,72.6025,1,19
+Canada Border Services Agency,National Capital Region,French,MAN_70B_e,No,12,26.7311,1,19
+Canada Border Services Agency,National Capital Region,French,MAN_70C_e,No,12,26.7311,1,19
+Canada Border Services Agency,Ontario (excluding the National Capital Region),All official languages,MAN_40BD_e,No,21,51.8567,1,19
+Canada Border Services Agency,Ontario (excluding the National Capital Region),All official languages,MAN_40BG_e,No,21,51.8567,1,19
+Canada Border Services Agency,Ontario (excluding the National Capital Region),All official languages,MAN_45BD_e,No,11,26.9336,1,19
+Canada Border Services Agency,Ontario (excluding the National Capital Region),All official languages,MAN_45BG_e,No,11,26.9336,1,19
+Canada Border Services Agency,Ontario (excluding the National Capital Region),All official languages,MAN_45BI_e,No,11,26.9336,1,19
+Canada Border Services Agency,Ontario (excluding the National Capital Region),English,MAN_40BD_e,No,21,51.8567,1,19
+Canada Border Services Agency,Ontario (excluding the National Capital Region),English,MAN_40BG_e,No,21,51.8567,1,19
+Canada Border Services Agency,Ontario (excluding the National Capital Region),English,MAN_45BD_e,No,11,26.9336,1,19
+Canada Border Services Agency,Ontario (excluding the National Capital Region),English,MAN_45BG_e,No,11,26.9336,1,19
+Canada Border Services Agency,Ontario (excluding the National Capital Region),English,MAN_45BI_e,No,11,26.9336,1,19
+Canada Border Services Agency,Ontario (excluding the National Capital Region),French,MAN_15_e,No,13,31.7129,1,19
+Canada Border Services Agency,"Prairies, Nunavut, Northwest Territories",All official languages,MAN_10B_e,Yes,23,56.2904,1,18
+Canada Border Services Agency,"Prairies, Nunavut, Northwest Territories",All official languages,MAN_55C_e,None,14,34.1261,1,20
+Canada Border Services Agency,"Prairies, Nunavut, Northwest Territories",English,MAN_10B_e,Yes,22,53.7169,1,18
+Canada Border Services Agency,"Prairies, Nunavut, Northwest Territories",English,MAN_55C_e,None,13,31.6582,1,20
+Canada Border Services Agency,Quebec (excluding the National Capital Region),All official languages,MAN_40BD_e,No,12,27.8619,1,19
+Canada Border Services Agency,Quebec (excluding the National Capital Region),All official languages,MAN_45BD_e,No,26,62.1137,1,19
+Canada Border Services Agency,Quebec (excluding the National Capital Region),All official languages,MAN_45BG_e,No,26,62.1137,1,19
+Canada Border Services Agency,Quebec (excluding the National Capital Region),French,MAN_45BD_e,No,20,48.4157,1,19
+Canada Border Services Agency,Quebec (excluding the National Capital Region),French,MAN_45BG_e,No,20,48.4157,1,19
+Canada Economic Development for Québec Regions,All regions,All official languages,MAN_35A_e,No,28,56.8326,1,19
+Canada Economic Development for Québec Regions,All regions,All official languages,MAN_40BG_e,No,15,31.1082,1,19
+Canada Economic Development for Québec Regions,All regions,All official languages,MAN_45BD_e,No,12,23.1017,1,19
+Canada Economic Development for Québec Regions,All regions,All official languages,MAN_45BG_e,No,12,23.1017,1,19
+Canada Economic Development for Québec Regions,All regions,All official languages,MAN_45BH_e,No,12,23.1017,1,19
+Canada Economic Development for Québec Regions,All regions,All official languages,MAN_45BI_e,No,12,23.1017,1,19
+Canada Economic Development for Québec Regions,All regions,All official languages,MAN_55C_e,None,21,43.1361,1,20
+Canada Economic Development for Québec Regions,All regions,French,ALL_25_e,No,135,283.5789,1,19
+Canada Economic Development for Québec Regions,All regions,French,MAN_35A_e,No,27,54.3126,1,19
+Canada Economic Development for Québec Regions,All regions,French,MAN_40BG_e,No,14,28.5882,1,19
+Canada Economic Development for Québec Regions,All regions,French,MAN_45BD_e,No,12,23.1017,1,19
+Canada Economic Development for Québec Regions,All regions,French,MAN_45BG_e,No,12,23.1017,1,19
+Canada Economic Development for Québec Regions,All regions,French,MAN_45BH_e,No,12,23.1017,1,19
+Canada Economic Development for Québec Regions,All regions,French,MAN_45BI_e,No,12,23.1017,1,19
+Canada Economic Development for Québec Regions,All regions,French,MAN_55C_e,None,20,40.6161,1,20
+Canada Economic Development for Québec Regions,Quebec (excluding the National Capital Region),All official languages,ALL_25_e,No,135,285.944,1,19
+Canada Economic Development for Québec Regions,Quebec (excluding the National Capital Region),All official languages,MAN_35A_e,No,27,55.1326,1,19
+Canada Economic Development for Québec Regions,Quebec (excluding the National Capital Region),All official languages,MAN_40BG_e,No,14,29.4082,1,19
+Canada Economic Development for Québec Regions,Quebec (excluding the National Capital Region),All official languages,MAN_45BD_e,No,11,21.4017,1,19
+Canada Economic Development for Québec Regions,Quebec (excluding the National Capital Region),All official languages,MAN_45BG_e,No,11,21.4017,1,19
+Canada Economic Development for Québec Regions,Quebec (excluding the National Capital Region),All official languages,MAN_45BH_e,No,11,21.4017,1,19
+Canada Economic Development for Québec Regions,Quebec (excluding the National Capital Region),All official languages,MAN_45BI_e,No,11,21.4017,1,19
+Canada Economic Development for Québec Regions,Quebec (excluding the National Capital Region),All official languages,MAN_55C_e,None,20,41.4361,1,20
+Canada Economic Development for Québec Regions,Quebec (excluding the National Capital Region),French,ALL_25_e,No,126,264.9871,1,19
+Canada Economic Development for Québec Regions,Quebec (excluding the National Capital Region),French,MAN_35A_e,No,26,52.6126,1,19
+Canada Economic Development for Québec Regions,Quebec (excluding the National Capital Region),French,MAN_40BG_e,No,13,26.8882,1,19
+Canada Economic Development for Québec Regions,Quebec (excluding the National Capital Region),French,MAN_45BD_e,No,11,21.4017,1,19
+Canada Economic Development for Québec Regions,Quebec (excluding the National Capital Region),French,MAN_45BG_e,No,11,21.4017,1,19
+Canada Economic Development for Québec Regions,Quebec (excluding the National Capital Region),French,MAN_45BH_e,No,11,21.4017,1,19
+Canada Economic Development for Québec Regions,Quebec (excluding the National Capital Region),French,MAN_45BI_e,No,11,21.4017,1,19
+Canada Economic Development for Québec Regions,Quebec (excluding the National Capital Region),French,MAN_55C_e,None,19,38.9161,1,20
+Canada School of Public Service,All regions,All official languages,MAN_10B_e,Yes,15,47.6934,1,18
+Canada School of Public Service,All regions,All official languages,MAN_45BG_e,No,30,76.9519,1,19
+Canada School of Public Service,All regions,All official languages,MAN_45BH_e,No,30,76.9519,1,19
+Canada School of Public Service,All regions,All official languages,MAN_55C_e,None,47,117.147,1,20
+Canada School of Public Service,All regions,English,MAN_50A_e,No,16,40.2656,1,19
+Canada School of Public Service,All regions,English,MAN_50F_e,Yes,18,46.0292,1,18
+Canada School of Public Service,All regions,English,MAN_55C_e,None,15,38.2656,1,20
+Canada School of Public Service,All regions,French,MAN_10B_e,Yes,10,32.5233,1,18
+Canada School of Public Service,All regions,French,MAN_45BG_e,No,24,62.0458,1,19
+Canada School of Public Service,All regions,French,MAN_45BH_e,No,24,62.0458,1,19
+Canada School of Public Service,All regions,French,MAN_50H_e,Yes,42,102.65,1,18
+Canada School of Public Service,All regions,French,MAN_50J_e,No,23,54.0146,1,19
+Canada School of Public Service,All regions,French,MAN_55C_e,None,32,78.8814,1,20
+Canada School of Public Service,National Capital Region,All official languages,MAN_10B_e,Yes,13,41.9298,1,18
+Canada School of Public Service,National Capital Region,All official languages,MAN_45BG_e,No,26,67.0676,1,19
+Canada School of Public Service,National Capital Region,All official languages,MAN_45BH_e,No,26,67.0676,1,19
+Canada School of Public Service,National Capital Region,All official languages,MAN_55C_e,None,40,101.142,1,20
+Canada School of Public Service,National Capital Region,English,MAN_50A_e,No,12,31.9035,1,19
+Canada School of Public Service,National Capital Region,English,MAN_50F_e,Yes,13,35.5464,1,18
+Canada School of Public Service,National Capital Region,English,MAN_55C_e,None,11,29.9035,1,20
+Canada School of Public Service,National Capital Region,French,ALL_25_e,No,153,337.3578,1,19
+Canada School of Public Service,National Capital Region,French,MAN_45BG_e,No,22,56.4029,1,19
+Canada School of Public Service,National Capital Region,French,MAN_45BH_e,No,22,56.4029,1,19
+Canada School of Public Service,National Capital Region,French,MAN_50H_e,Yes,38,93.0071,1,18
+Canada School of Public Service,National Capital Region,French,MAN_50J_e,No,21,48.3717,1,19
+Canada School of Public Service,National Capital Region,French,MAN_55C_e,None,29,71.2385,1,20
+Canadian Environmental Assessment Agency,All regions,All official languages,MAN_10B_e,Yes,21,37.6121,1,18
+Canadian Environmental Assessment Agency,All regions,All official languages,MAN_40BD_e,No,22,40.7506,1,19
+Canadian Environmental Assessment Agency,All regions,All official languages,MAN_40BG_e,No,22,40.7506,1,19
+Canadian Environmental Assessment Agency,All regions,All official languages,MAN_50F_e,Yes,24,45.1036,1,18
+Canadian Environmental Assessment Agency,All regions,English,MAN_10B_e,Yes,13,22.3673,1,18
+Canadian Environmental Assessment Agency,All regions,English,MAN_35A_e,No,13,23.3277,1,19
+Canadian Environmental Assessment Agency,All regions,English,MAN_40BD_e,No,12,21.1512,1,19
+Canadian Environmental Assessment Agency,All regions,English,MAN_40BG_e,No,12,21.1512,1,19
+Canadian Environmental Assessment Agency,All regions,English,MAN_50F_e,Yes,13,23.3277,1,18
+Canadian Environmental Assessment Agency,All regions,English,MAN_55B_e,None,12,21.717,1,20
+Canadian Environmental Assessment Agency,All regions,French,MAN_40BD_e,No,10,19.5994,1,19
+Canadian Environmental Assessment Agency,All regions,French,MAN_40BG_e,No,10,19.5994,1,19
+Canadian Environmental Assessment Agency,All regions,French,MAN_50F_e,Yes,11,21.7759,1,18
+Canadian Environmental Assessment Agency,All regions,French,MAN_50H_e,Yes,11,21.7759,1,18
+Canadian Environmental Assessment Agency,National Capital Region,All official languages,MAN_10B_e,Yes,17,31.1222,1,18
+Canadian Environmental Assessment Agency,National Capital Region,All official languages,MAN_40BD_e,No,19,35.9185,1,19
+Canadian Environmental Assessment Agency,National Capital Region,All official languages,MAN_40BG_e,No,19,35.9185,1,19
+Canadian Environmental Assessment Agency,National Capital Region,All official languages,MAN_50F_e,Yes,20,38.095,1,18
+Canadian Environmental Assessment Agency,National Capital Region,All official languages,MAN_50H_e,Yes,20,38.095,1,18
+Canadian Environmental Assessment Agency,National Capital Region,English,MAN_10B_e,Yes,10,17.4881,1,18
+Canadian Environmental Assessment Agency,National Capital Region,English,MAN_25C_e,No,10,17.9298,1,19
+Canadian Environmental Assessment Agency,National Capital Region,English,MAN_35A_e,No,10,17.9298,1,19
+Canadian Environmental Assessment Agency,National Capital Region,English,MAN_40A_e,Yes,10,17.9298,1,18
+Canadian Environmental Assessment Agency,National Capital Region,English,MAN_40BD_e,No,10,17.9298,1,19
+Canadian Environmental Assessment Agency,National Capital Region,English,MAN_40BG_e,No,10,17.9298,1,19
+Canadian Environmental Assessment Agency,National Capital Region,English,MAN_50F_e,Yes,10,17.9298,1,18
+Canadian Environmental Assessment Agency,National Capital Region,English,MAN_50H_e,Yes,10,17.9298,1,18
+Canadian Environmental Assessment Agency,National Capital Region,English,MAN_55B_e,None,10,17.9298,1,20
+Canadian Environmental Assessment Agency,National Capital Region,French,MAN_50F_e,Yes,10,20.1652,1,18
+Canadian Environmental Assessment Agency,National Capital Region,French,MAN_50H_e,Yes,10,20.1652,1,18
+Canadian Environmental Assessment Agency,National Capital Region,French,MAN_85B_e,Not at all,10,20.1652,1,9
+Canadian Grain Commission,All regions,All official languages,MAN_10B_e,Yes,23,36.8102,1,18
+Canadian Grain Commission,All regions,All official languages,MAN_40BF_e,No,17,27.1647,1,19
+Canadian Grain Commission,All regions,All official languages,MAN_45BD_e,No,20,31.675,1,19
+Canadian Grain Commission,All regions,All official languages,MAN_45BE_e,No,20,31.675,1,19
+Canadian Grain Commission,All regions,All official languages,MAN_45BF_e,No,20,31.675,1,19
+Canadian Grain Commission,All regions,All official languages,MAN_45BG_e,No,20,31.675,1,19
+Canadian Grain Commission,All regions,All official languages,MAN_45BH_e,No,20,31.675,1,19
+Canadian Grain Commission,All regions,All official languages,MAN_45BI_e,No,20,31.675,1,19
+Canadian Grain Commission,All regions,All official languages,MAN_55C_e,None,27,43.0108,1,20
+Canadian Grain Commission,All regions,English,MAN_10B_e,Yes,18,28.6138,1,18
+Canadian Grain Commission,All regions,English,MAN_40BF_e,No,15,23.8912,1,19
+Canadian Grain Commission,All regions,English,MAN_40BG_e,No,15,23.8912,1,19
+Canadian Grain Commission,All regions,English,MAN_45BD_e,No,19,30.1558,1,19
+Canadian Grain Commission,All regions,English,MAN_45BE_e,No,19,30.1558,1,19
+Canadian Grain Commission,All regions,English,MAN_45BF_e,No,19,30.1558,1,19
+Canadian Grain Commission,All regions,English,MAN_45BG_e,No,19,30.1558,1,19
+Canadian Grain Commission,All regions,English,MAN_45BH_e,No,19,30.1558,1,19
+Canadian Grain Commission,All regions,English,MAN_45BI_e,No,19,30.1558,1,19
+Canadian Grain Commission,All regions,English,MAN_55C_e,None,24,38.3295,1,20
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",All official languages,MAN_10B_e,Yes,19,30.3616,1,18
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",All official languages,MAN_40BF_e,No,16,25.5869,1,19
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",All official languages,MAN_45BD_e,No,17,26.7807,1,19
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",All official languages,MAN_45BE_e,No,17,26.7807,1,19
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",All official languages,MAN_45BF_e,No,17,26.7807,1,19
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",All official languages,MAN_45BG_e,No,17,26.7807,1,19
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",All official languages,MAN_45BH_e,No,17,26.7807,1,19
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",All official languages,MAN_45BI_e,No,17,26.7807,1,19
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",All official languages,MAN_50G_e,Yes,25,39.6648,1,18
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",All official languages,MAN_55C_e,None,22,34.8308,1,20
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",English,MAN_10B_e,Yes,15,23.7495,1,18
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",English,MAN_25C_e,No,26,41.4256,1,19
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",English,MAN_40BF_e,No,15,23.8912,1,19
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",English,MAN_40BG_e,No,15,23.8912,1,19
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",English,MAN_45BD_e,No,16,25.2615,1,19
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",English,MAN_45BE_e,No,16,25.2615,1,19
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",English,MAN_45BF_e,No,16,25.2615,1,19
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",English,MAN_45BG_e,No,16,25.2615,1,19
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",English,MAN_45BH_e,No,16,25.2615,1,19
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",English,MAN_45BI_e,No,16,25.2615,1,19
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",English,MAN_50G_e,Yes,24,38.1456,1,18
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",English,MAN_55C_e,None,21,33.3116,1,20
+Canadian Grain Commission,"Prairies, Nunavut, Northwest Territories",French,ALL_25_e,No,10,16.3983,1,19
+Canadian Heritage,All regions,English,MAN_45BH_e,No,29,60.2034,1,19
+Canadian Heritage,All regions,French,MAN_45BG_e,No,58,124.0025,1,19
+Canadian Heritage,Atlantic,All official languages,ALL_20A_e,To a great extent,20,37.4869,1,12
+Canadian Heritage,Atlantic,All official languages,ALL_25_e,No,21,39.6562,1,19
+Canadian Heritage,Atlantic,English,ALL_20A_e,To a great extent,10,18.915,1,12
+Canadian Heritage,Atlantic,English,ALL_20B_e,To a great extent,10,18.915,1,12
+Canadian Heritage,Atlantic,English,ALL_20C_e,To a great extent,10,18.915,1,12
+Canadian Heritage,Atlantic,English,ALL_25_e,No,10,18.915,1,19
+Canadian Heritage,Atlantic,French,ALL_20A_e,To a great extent,10,18.5719,1,12
+Canadian Heritage,Atlantic,French,ALL_25_e,No,11,20.7412,1,19
+Canadian Heritage,"British Columbia, Yukon",English,ALL_25_e,No,21,43.9127,1,19
+Canadian Heritage,National Capital Region,English,MAN_45BH_e,No,28,57.9034,1,19
+Canadian Heritage,National Capital Region,French,MAN_45BG_e,No,53,113.6702,1,19
+Canadian Heritage,"Prairies, Nunavut, Northwest Territories",English,ALL_20A_e,To a great extent,15,30.3016,1,12
+Canadian Human Rights Commission,All regions,All official languages,MAN_35A_e,No,17,33.3752,1,19
+Canadian Human Rights Commission,All regions,All official languages,MAN_40BG_e,No,14,27.5022,1,19
+Canadian Human Rights Commission,All regions,All official languages,MAN_55C_e,None,14,27.8108,1,20
+Canadian Human Rights Commission,All regions,French,MAN_35A_e,No,13,25.9022,1,19
+Canadian Human Rights Commission,All regions,French,MAN_40BG_e,No,11,22.1141,1,19
+Canadian Human Rights Commission,All regions,French,MAN_55C_e,None,11,22.1926,1,20
+Canadian Human Rights Commission,National Capital Region,All official languages,MAN_35A_e,No,17,33.3752,1,19
+Canadian Human Rights Commission,National Capital Region,All official languages,MAN_40BG_e,No,14,27.5022,1,19
+Canadian Human Rights Commission,National Capital Region,All official languages,MAN_55C_e,None,14,27.8108,1,20
+Canadian Human Rights Commission,National Capital Region,French,MAN_35A_e,No,13,25.9022,1,19
+Canadian Human Rights Commission,National Capital Region,French,MAN_40BG_e,No,11,22.1141,1,19
+Canadian Human Rights Commission,National Capital Region,French,MAN_55C_e,None,11,22.1926,1,20
+Canadian Intergovernmental Conference Secretariat,All regions,All official languages,ALL_20A_e,To a great extent,10,20.909,1,12
+Canadian Intergovernmental Conference Secretariat,All regions,All official languages,ALL_20B_e,To a great extent,10,20.909,1,12
+Canadian Intergovernmental Conference Secretariat,All regions,All official languages,ALL_25_e,No,10,20.909,1,19
+Canadian Intergovernmental Conference Secretariat,National Capital Region,All official languages,ALL_20A_e,To a great extent,10,20.909,1,12
+Canadian Intergovernmental Conference Secretariat,National Capital Region,All official languages,ALL_20B_e,To a great extent,10,20.909,1,12
+Canadian Intergovernmental Conference Secretariat,National Capital Region,All official languages,ALL_25_e,No,10,20.909,1,19
+Canadian Northern Economic Development Agency,National Capital Region,All official languages,ALL_20A_e,To a great extent,10,20.6531,1,12
+Canadian Northern Economic Development Agency,National Capital Region,All official languages,ALL_20B_e,To a great extent,10,20.6531,1,12
+Canadian Northern Economic Development Agency,National Capital Region,All official languages,ALL_25_e,No,10,20.6531,1,19
+Canadian Radio-television and TeleCommunications Commission,All regions,All official languages,MAN_10B_e,Yes,25,42.9505,1,18
+Canadian Radio-television and TeleCommunications Commission,All regions,All official languages,MAN_45BD_e,No,15,28.8276,1,19
+Canadian Radio-television and TeleCommunications Commission,All regions,All official languages,MAN_45BG_e,No,15,28.8276,1,19
+Canadian Radio-television and TeleCommunications Commission,All regions,All official languages,MAN_45BH_e,No,15,28.8276,1,19
+Canadian Radio-television and TeleCommunications Commission,All regions,English,MAN_10B_e,Yes,13,21.5708,1,18
+Canadian Radio-television and TeleCommunications Commission,All regions,English,MAN_35A_e,No,20,35.7255,1,19
+Canadian Radio-television and TeleCommunications Commission,All regions,French,MAN_10B_e,Yes,12,21.3797,1,18
+Canadian Radio-television and TeleCommunications Commission,All regions,French,MAN_45BD_e,No,10,19.0584,1,19
+Canadian Radio-television and TeleCommunications Commission,All regions,French,MAN_45BG_e,No,10,19.0584,1,19
+Canadian Radio-television and TeleCommunications Commission,All regions,French,MAN_45BH_e,No,10,19.0584,1,19
+Canadian Radio-television and TeleCommunications Commission,All regions,French,MAN_50A_e,No,26,52.0896,1,19
+Canadian Radio-television and TeleCommunications Commission,National Capital Region,All official languages,MAN_10B_e,Yes,25,42.9505,1,18
+Canadian Radio-television and TeleCommunications Commission,National Capital Region,All official languages,MAN_45BD_e,No,15,28.8276,1,19
+Canadian Radio-television and TeleCommunications Commission,National Capital Region,All official languages,MAN_45BG_e,No,15,28.8276,1,19
+Canadian Radio-television and TeleCommunications Commission,National Capital Region,All official languages,MAN_45BH_e,No,15,28.8276,1,19
+Canadian Radio-television and TeleCommunications Commission,National Capital Region,English,MAN_10B_e,Yes,13,21.5708,1,18
+Canadian Radio-television and TeleCommunications Commission,National Capital Region,English,MAN_35A_e,No,20,35.7255,1,19
+Canadian Radio-television and TeleCommunications Commission,National Capital Region,French,MAN_10B_e,Yes,12,21.3797,1,18
+Canadian Radio-television and TeleCommunications Commission,National Capital Region,French,MAN_45BD_e,No,10,19.0584,1,19
+Canadian Radio-television and TeleCommunications Commission,National Capital Region,French,MAN_45BG_e,No,10,19.0584,1,19
+Canadian Radio-television and TeleCommunications Commission,National Capital Region,French,MAN_45BH_e,No,10,19.0584,1,19
+Canadian Radio-television and TeleCommunications Commission,National Capital Region,French,MAN_50A_e,No,26,52.0896,1,19
+Canadian Space Agency,All regions,All official languages,MAN_10B_e,Yes,14,28.3032,1,18
+Canadian Space Agency,All regions,All official languages,MAN_40BG_e,No,37,73.0115,1,19
+Canadian Space Agency,All regions,All official languages,MAN_45BD_e,No,32,63.1174,1,19
+Canadian Space Agency,All regions,All official languages,MAN_45BG_e,No,32,63.1174,1,19
+Canadian Space Agency,All regions,English,MAN_35A_e,No,18,35.3737,1,19
+Canadian Space Agency,All regions,English,MAN_40BG_e,No,13,25.7,1,19
+Canadian Space Agency,All regions,English,MAN_50E_e,No,12,23.3186,1,19
+Canadian Space Agency,All regions,English,MAN_55C_e,None,16,31.3771,1,20
+Canadian Space Agency,All regions,French,MAN_10B_e,Yes,12,24.2184,1,18
+Canadian Space Agency,All regions,French,MAN_40BG_e,No,24,47.3115,1,19
+Canadian Space Agency,All regions,French,MAN_45BD_e,No,25,49.7171,1,19
+Canadian Space Agency,All regions,French,MAN_45BG_e,No,25,49.7171,1,19
+Canadian Space Agency,Quebec (excluding the National Capital Region),All official languages,MAN_10B_e,Yes,13,26.2608,1,18
+Canadian Space Agency,Quebec (excluding the National Capital Region),All official languages,MAN_40BG_e,No,33,64.8392,1,19
+Canadian Space Agency,Quebec (excluding the National Capital Region),All official languages,MAN_45BD_e,No,31,61.2541,1,19
+Canadian Space Agency,Quebec (excluding the National Capital Region),All official languages,MAN_45BG_e,No,31,61.2541,1,19
+Canadian Space Agency,Quebec (excluding the National Capital Region),English,MAN_25C_e,No,14,27.2014,1,19
+Canadian Space Agency,Quebec (excluding the National Capital Region),English,MAN_35A_e,No,14,27.2014,1,19
+Canadian Space Agency,Quebec (excluding the National Capital Region),English,MAN_50E_e,No,11,21.1853,1,19
+Canadian Space Agency,Quebec (excluding the National Capital Region),English,MAN_55C_e,None,13,25.3381,1,20
+Canadian Space Agency,Quebec (excluding the National Capital Region),English,MAN_85B_e,Not at all,21,40.9225,1,9
+Canadian Space Agency,Quebec (excluding the National Capital Region),French,MAN_10B_e,Yes,12,24.2184,1,18
+Canadian Space Agency,Quebec (excluding the National Capital Region),French,MAN_40BG_e,No,24,47.3115,1,19
+Canadian Space Agency,Quebec (excluding the National Capital Region),French,MAN_45BD_e,No,25,49.7171,1,19
+Canadian Space Agency,Quebec (excluding the National Capital Region),French,MAN_45BG_e,No,25,49.7171,1,19
+Canadian Transportation Agency,All regions,All official languages,MAN_10B_e,Yes,19,33.4616,1,18
+Canadian Transportation Agency,All regions,All official languages,MAN_45BE_e,No,13,23.3476,1,19
+Canadian Transportation Agency,All regions,All official languages,MAN_45BG_e,No,13,23.3476,1,19
+Canadian Transportation Agency,All regions,All official languages,MAN_45BI_e,No,13,23.3476,1,19
+Canadian Transportation Agency,All regions,English,MAN_10B_e,Yes,14,24.2578,1,18
+Canadian Transportation Agency,All regions,English,MAN_40BD_e,No,11,18.266,1,19
+Canadian Transportation Agency,All regions,English,MAN_50J_e,No,10,16.1356,1,19
+Canadian Transportation Agency,All regions,English,MAN_55C_e,None,10,16.1356,1,20
+Canadian Transportation Agency,National Capital Region,All official languages,MAN_10B_e,Yes,19,33.4616,1,18
+Canadian Transportation Agency,National Capital Region,All official languages,MAN_45BE_e,No,13,23.3476,1,19
+Canadian Transportation Agency,National Capital Region,All official languages,MAN_45BG_e,No,13,23.3476,1,19
+Canadian Transportation Agency,National Capital Region,All official languages,MAN_45BI_e,No,13,23.3476,1,19
+Canadian Transportation Agency,National Capital Region,English,MAN_10B_e,Yes,14,24.2578,1,18
+Canadian Transportation Agency,National Capital Region,English,MAN_40BD_e,No,11,18.266,1,19
+Canadian Transportation Agency,National Capital Region,English,MAN_50J_e,No,10,16.1356,1,19
+Canadian Transportation Agency,National Capital Region,English,MAN_55C_e,None,10,16.1356,1,20
+Correctional Service Canada,All regions,All official languages,MAN_35BB_e,No,64,147.2388,1,19
+Correctional Service Canada,All regions,All official languages,MAN_35BG_e,No,64,147.2388,1,19
+Correctional Service Canada,All regions,All official languages,MAN_45BG_e,No,240,571.1847,1,19
+Correctional Service Canada,All regions,English,MAN_35BB_e,No,42,94.7763,1,19
+Correctional Service Canada,All regions,English,MAN_35BD_e,No,42,94.7763,1,19
+Correctional Service Canada,All regions,English,MAN_35BG_e,No,42,94.7763,1,19
+Correctional Service Canada,All regions,English,MAN_45BG_e,No,156,370.6733,1,19
+Correctional Service Canada,All regions,French,MAN_35BB_e,No,22,52.4625,1,19
+Correctional Service Canada,All regions,French,MAN_35BG_e,No,22,52.4625,1,19
+Correctional Service Canada,All regions,French,MAN_45BG_e,No,84,200.5114,1,19
+Correctional Service Canada,All regions,Not stated,ALL_25_e,No,17,51.3848,1,19
+Correctional Service Canada,Atlantic,All official languages,MAN_45BG_e,No,26,61.5625,1,19
+Correctional Service Canada,Atlantic,All official languages,MAN_55C_e,None,28,65.8167,1,20
+Correctional Service Canada,Atlantic,French,MAN_25C_e,No,30,69.0647,1,19
+Correctional Service Canada,Atlantic,French,MAN_45BG_e,No,18,41.9235,1,19
+Correctional Service Canada,Atlantic,French,MAN_55C_e,None,20,43.942,1,20
+Correctional Service Canada,"British Columbia, Yukon",All official languages,MAN_45BD_e,No,33,80.7336,1,19
+Correctional Service Canada,"British Columbia, Yukon",All official languages,MAN_45BG_e,No,33,80.7336,1,19
+Correctional Service Canada,"British Columbia, Yukon",All official languages,MAN_45BH_e,No,33,80.7336,1,19
+Correctional Service Canada,"British Columbia, Yukon",English,MAN_45BD_e,No,32,78.0122,1,19
+Correctional Service Canada,"British Columbia, Yukon",English,MAN_45BG_e,No,32,78.0122,1,19
+Correctional Service Canada,"British Columbia, Yukon",English,MAN_45BH_e,No,32,78.0122,1,19
+Correctional Service Canada,National Capital Region,All official languages,MAN_45BG_e,No,44,96.906,1,19
+Correctional Service Canada,National Capital Region,All official languages,MAN_45BH_e,No,44,96.906,1,19
+Correctional Service Canada,National Capital Region,All official languages,MAN_70J_e,No,10,22.4887,1,19
+Correctional Service Canada,National Capital Region,English,MAN_45BG_e,No,23,51.7153,1,19
+Correctional Service Canada,National Capital Region,English,MAN_45BH_e,No,23,51.7153,1,19
+Correctional Service Canada,National Capital Region,English,MAN_45BI_e,No,23,51.7153,1,19
+Correctional Service Canada,National Capital Region,French,MAN_45BD_e,No,21,45.1907,1,19
+Correctional Service Canada,National Capital Region,French,MAN_45BG_e,No,21,45.1907,1,19
+Correctional Service Canada,National Capital Region,French,MAN_45BH_e,No,21,45.1907,1,19
+Correctional Service Canada,National Capital Region,French,MAN_55C_e,None,35,74.7438,1,20
+Correctional Service Canada,Ontario (excluding the National Capital Region),All official languages,MAN_35BB_e,No,17,37.8655,1,19
+Correctional Service Canada,Ontario (excluding the National Capital Region),All official languages,MAN_35BC_e,No,17,37.8655,1,19
+Correctional Service Canada,Ontario (excluding the National Capital Region),All official languages,MAN_35BD_e,No,17,37.8655,1,19
+Correctional Service Canada,Ontario (excluding the National Capital Region),All official languages,MAN_35BG_e,No,17,37.8655,1,19
+Correctional Service Canada,Ontario (excluding the National Capital Region),All official languages,MAN_35BH_e,No,17,37.8655,1,19
+Correctional Service Canada,Ontario (excluding the National Capital Region),All official languages,MAN_45BF_e,No,33,77.3755,1,19
+Correctional Service Canada,Ontario (excluding the National Capital Region),All official languages,MAN_45BG_e,No,33,77.3755,1,19
+Correctional Service Canada,Ontario (excluding the National Capital Region),All official languages,MAN_55C_e,None,43,106.5197,1,20
+Correctional Service Canada,Ontario (excluding the National Capital Region),English,MAN_35BB_e,No,15,33.4899,1,19
+Correctional Service Canada,Ontario (excluding the National Capital Region),English,MAN_35BC_e,No,15,33.4899,1,19
+Correctional Service Canada,Ontario (excluding the National Capital Region),English,MAN_35BD_e,No,15,33.4899,1,19
+Correctional Service Canada,Ontario (excluding the National Capital Region),English,MAN_35BG_e,No,15,33.4899,1,19
+Correctional Service Canada,Ontario (excluding the National Capital Region),English,MAN_35BH_e,No,15,33.4899,1,19
+Correctional Service Canada,Ontario (excluding the National Capital Region),English,MAN_45BF_e,No,32,74.3983,1,19
+Correctional Service Canada,Ontario (excluding the National Capital Region),English,MAN_45BG_e,No,32,74.3983,1,19
+Correctional Service Canada,Ontario (excluding the National Capital Region),English,MAN_55C_e,None,39,97.1038,1,20
+Correctional Service Canada,Ontario (excluding the National Capital Region),French,ALL_25_e,No,44,175.6621,1,19
+Correctional Service Canada,Ontario (excluding the National Capital Region),Not stated,ALL_15B_e,To a great extent,10,29.3905,1,12
+Correctional Service Canada,Ontario (excluding the National Capital Region),Not stated,ALL_25_e,No,10,29.3905,1,19

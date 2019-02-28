@@ -49,10 +49,10 @@ dispatch.on("load_chart", function (chart_data) {
 
     let new_depts = selectedDeptArray;
 
+
     let new_chart_data_1 = _.groupBy(_.filter(chart_data[start_fol][start_reg][start_Q], function (answer) {
         return _.contains(new_depts, answer.final_dept_e);
     }), 'question_value');
-
 
     let new_chart_data = _.map(new_chart_data_1, function (value) {
 

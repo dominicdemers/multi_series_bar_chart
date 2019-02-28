@@ -137,10 +137,15 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
                     let nodata_depts = _.difference(current_depts, available_depts);
 
                     if (nodata_depts.length > 0) {
+                        let nodata_string = "";
+                        for(i = 0; i < nodata_depts.length; i++) {
+                            nodata_string += '<br/>' + " - " + nodata_depts[i];
+                            console.log("nodata_string: " + nodata_string);
+                        }
                         d3.select("#no_response")
                           .style("display","block");
                         d3.select("#no_response_msg")
-                          .text("The following selected oganizations have no matching data from the selected filters: " + nodata_depts);
+                          .html("The following selected oganizations have no matching data from the selected filters:" + nodata_string);
                     }
                 } 
             }
@@ -184,6 +189,9 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
 
                 // return newObj;
             });
+
+            //console.log("new_graph_data: " + JSON.stringify(new_graph_data));
+
 
             let current_q_long = _.filter(question_info, function (row) {
                 return _.contains([current_question], row.var_name_e);

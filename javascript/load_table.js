@@ -17,6 +17,8 @@ dispatch.on("load_table", function (tbl_data) {
         return _.contains(start_dept, row.DEPT) && _.contains(start_Q, row.Question) && _.contains(start_fol, row.FOL) && _.contains(start_reg, row.Region);
     });
 
+    // console.log("filt_SOS_data: " + JSON.stringify(filt_SOS_data));
+
     let temp_answer_keys = _.uniq(_.flatten(_.pluck(filt_SOS_data, 'answer_keys')));
 
     let new_answer_keys = _.sortBy(temp_answer_keys, function(element){

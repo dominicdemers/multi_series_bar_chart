@@ -67,6 +67,10 @@ function test_func(error, var_info, sos_tbl_data) {
         });
     }).value();
 
+    //console.log("sos_graph_data: " + JSON.stringify(sos_graph_data));
+
+
+
     let groups = _.groupBy(sos_tbl_data, function (value) {
         return value.FOL_e + '#' + value.Region_e + '#' + value.question_name + '#' + value.final_dept_e;
     });
@@ -76,10 +80,13 @@ function test_func(error, var_info, sos_tbl_data) {
         let mapped = _.map(group, function (ans) {
             return _defineProperty({}, ans.question_value, ans.shr_w_resp);
         });
+        // console.log("mapped: " + mapped);
 
         let ans_keys = _.uniq(_.map(group, function (key) {
             return key.question_value;
         }));
+
+        // console.log("ans_keys: " + ans_keys);
 
         let sorted_keys1 = _.uniq(_.map(group, function (key) {
             return {
@@ -87,6 +94,7 @@ function test_func(error, var_info, sos_tbl_data) {
                 sorter:key.sorter
             }
         }));
+
 
         let sorted_keys = _.map(sorted_keys1, function (ans) {
             return _defineProperty({}, ans.answer, ans.sorter);
