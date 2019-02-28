@@ -4,7 +4,6 @@
     <file url="file://$PROJECT_DIR$/archive/es6/load_choice_es6.js" libraries="{underscore}" />
     <file url="file://$PROJECT_DIR$/archive/load_data_old.js" libraries="{d3.v4, underscore}" />
     <file url="file://$PROJECT_DIR$/archive/load_data_old2.js" libraries="{d3.v4, underscore}" />
-    <file url="file://$PROJECT_DIR$/javascript/export_file.js" libraries="{d3.v4, underscore}" />
     <file url="file://$PROJECT_DIR$/javascript/load_chart.js" libraries="{d3.v4, underscore}" />
     <file url="file://$PROJECT_DIR$/javascript/load_choice.js" libraries="{d3.v4, underscore}" />
     <file url="file://$PROJECT_DIR$/javascript/load_data.js" libraries="{underscore}" />
