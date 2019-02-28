@@ -28,7 +28,6 @@ dispatch.on("load_table", function (tbl_data) {
 
     });
 
-
     let columns = ["Series","DEPT"].concat(_toConsumableArray(new_answer_keys));
 
     let table = d3.select("#table_div")

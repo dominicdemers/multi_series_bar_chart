@@ -145,7 +145,7 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
                         d3.select("#no_response")
                           .style("display","block");
                         d3.select("#no_response_msg")
-                          .html("The following selected oganizations have no matching data from the selected filters:" + nodata_string);
+                          .html("The following selected organizations have no matching data from the selected filters: " + nodata_string);
                     }
                 } 
             }
