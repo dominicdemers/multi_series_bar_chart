@@ -134,10 +134,15 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
                     let nodata_depts = _.difference(current_depts, available_depts);
 
                     if (nodata_depts.length > 0) {
+                        let nodata_string = "";
+                        for(i = 0; i < nodata_depts.length; i++) {
+                            nodata_string += '<br/>' + " - " + nodata_depts[i];
+                            console.log("nodata_string: " + nodata_string);
+                        }
                         d3.select("#no_response")
                           .style("display","block");
                         d3.select("#no_response_msg")
-                          .text("Les organisations suivantes n'ont pas de résultats correspondants aux filtres sélectionnés: " + nodata_depts);
+                          .html("Les organisations suivantes n'ont pas de résultats correspondants aux filtres sélectionnés: " + nodata_string);
                     }
                 } 
             }
