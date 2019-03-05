@@ -11,9 +11,13 @@ function _toConsumableArray(arr) {
 
 dispatch.on("load_table", function (tbl_data) {
 
+    console.log("tbl_data: " + tbl_data.length);
+
     let filt_SOS_data = _.filter(tbl_data, function (row) {
-        return _.contains(start_dept, row.DEPT) && _.contains(start_Q, row.Question) && _.contains(start_fol, row.fol) && _.contains(start_reg, row.region);
+        return _.contains(start_dept, row.DEPT) && _.contains(start_Q, row.Question) && _.contains(start_fol, row.FOL) && _.contains(start_reg, row.Region);
     });
+
+    // console.log("filt_SOS_data: " + JSON.stringify(filt_SOS_data));
 
     let temp_answer_keys = _.uniq(_.flatten(_.pluck(filt_SOS_data, 'answer_keys')));
 
