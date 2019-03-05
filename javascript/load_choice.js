@@ -140,7 +140,6 @@ dispatch.on("load_choice", function (load_data, sos_graph_data, question_info) {
                         let nodata_string = "";
                         for(i = 0; i < nodata_depts.length; i++) {
                             nodata_string += '<br/>' + " - " + nodata_depts[i];
-                            console.log("nodata_string: " + nodata_string);
                         }
                         d3.select("#no_response")
                           .style("display","block");
