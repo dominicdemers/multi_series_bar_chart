@@ -103,6 +103,8 @@ dispatch.on("load_table", function (tbl_data) {
 
         let thead_u = table_u.select('thead').select('tr');
 
+        thead_u.selectAll('th').remove();
+
         let thead_u_th = thead_u.selectAll('th').data(new_columns);
 
         thead_u_th.exit().remove();
