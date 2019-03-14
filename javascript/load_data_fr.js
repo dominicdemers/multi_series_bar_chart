@@ -41,6 +41,8 @@ let z = d3.scaleOrdinal(d3.schemeCategory20);
 
 function test_func(error, var_info, sos_tbl_data) {
 
+    debugger;
+
     // if (typeof window.AudioContext !== "undefined") {
     //
     //     var context = new window.AudioContext;
@@ -112,6 +114,7 @@ function test_func(error, var_info, sos_tbl_data) {
 
 }
 function init() {
+
     d3.queue()
         .defer(d3.csv, 'https://www.canada.ca/content/dam/psc-cfp/documents/data-donnees/snps-sdip/CFPPSC_SNPS14V.csv')
         .defer(d3.csv, 'https://www.canada.ca/content/dam/psc-cfp/documents/data-donnees/snps-sdip/CFPPSC_SNPS14F.csv')

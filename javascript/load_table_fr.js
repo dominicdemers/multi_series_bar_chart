@@ -88,10 +88,19 @@ dispatch.on("load_table", function (tbl_data) {
 
         let temp_answer_keys = _.uniq(_.flatten(_.pluck(d, 'answer_keys')));
 
-        let answer_keys_2 = _.sortBy(temp_answer_keys, function(element){
-            let rank = _.uniq(_.flatten(_.pluck(d, 'sorted_keys')));
-            return rank[element];
-        });
+        let temp = _.max(d, function(l){
+            return _.keys(l).length;
+        })['sorted_keys'];
+
+        let answer_keys_2 = _.map(temp, function(d){
+            return _.keys(d)
+        })
+
+
+        // let answer_keys_2 = _.sortBy(temp_answer_keys, function(element){
+        //     let rank = _.uniq(_.flatten(_.pluck(d, 'sorted_keys')));
+        //     return rank[element];
+        // });
 
         let new_columns = ["Séries","DEPT"].concat(_toConsumableArray(answer_keys_2));
 
