@@ -11,9 +11,11 @@ function _toConsumableArray(arr) {
 
 dispatch.on("load_table", function (tbl_data) {
 
+
     let filt_SOS_data = _.filter(tbl_data, function (row) {
-        return _.contains(start_dept, row.DEPT) && _.contains(start_Q, row.Question) && _.contains(start_fol, row.fol) && _.contains(start_reg, row.region);
+        return _.contains(start_dept, row.DEPT) && _.contains(start_Q, row.Question) && _.contains(start_fol, row.FOL) && _.contains(start_reg, row.Region);
     });
+
 
     let temp_answer_keys = _.uniq(_.flatten(_.pluck(filt_SOS_data, 'answer_keys')));
 
@@ -35,7 +37,8 @@ dispatch.on("load_table", function (tbl_data) {
     $(document).ready( function () {
         $('#adv_tbl').DataTable({
             "paging": false,
-            "searching": false
+            "searching": false,
+            "bInfo" : false
         });
     } );
 
@@ -107,6 +110,8 @@ dispatch.on("load_table", function (tbl_data) {
 
         let thead_u = table_u.select('thead').select('tr');
 
+        thead_u.selectAll('th').remove();
+
         let thead_u_th = thead_u.selectAll('th').data(new_columns);
 
         thead_u_th.exit().remove();
@@ -156,7 +161,8 @@ dispatch.on("load_table", function (tbl_data) {
             
         $('#adv_tbl').DataTable({
                 "paging": false,
-                "searching": false
+                "searching": false,
+                "bInfo" : false
         });   
     });
 });

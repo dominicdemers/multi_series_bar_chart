@@ -5538,7 +5538,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 	display: inline-block;
 }
 .breadcrumb > li + li::before {
-	padding: 0px 5px; color: rgb(204, 204, 204); content: "/ ";
+	padding: 0px 5px; color: rgb(204, 204, 204); content: "/ï¿½";
 }
 .breadcrumb > .active {
 	color: rgb(118, 118, 118);
@@ -8442,7 +8442,7 @@ q::after {
 	overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 100%;
 }
 #wb-bc li::before {
-	color: rgb(51, 51, 51); font-family: "Glyphicons Halflings"; font-size: 0.7em; content: "?";
+	color: rgb(51, 51, 51); font-family: "Glyphicons Halflings"; font-size: 0.7em; content: "î‚’";
 }
 [dir=rtl] #wb-bc li::before {
 	display: inline-block; content: "?";
